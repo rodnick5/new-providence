@@ -1,1 +1,7 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+header {
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1000px;
+}
+/*# sourceMappingURL=style.css.map */

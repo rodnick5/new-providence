@@ -8,13 +8,16 @@ header{
     background-size: cover;
     height: 1000px;
     width: 100%;
+    -webkit-box-shadow: 0px 4px 14px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 14px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 14px -8px rgba(0,0,0,0.75);
     nav{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         height: 132px;
-        .left-side{
+        .header-left-side{
             margin-left: 215px;
             display: flex;
             flex-direction: row;
@@ -48,27 +51,27 @@ header{
                 margin-right: 42px;
             }
         }
-        .center-side{
+        .header-center-side{
 
         }
-        .right-side{
+        .header-right-side{
             display: flex;
             flex-direction: row;
             align-items: center;
             margin-right: 218px;
-            .headerHelp{
+            .header-help{
                 margin-right: 30px;
                 font-size: 16px;
                 font-family: "Lato";
                 color: rgba(27, 28, 30, 0.4);
             }
-            .headerContacts{
+            .header-contacts{
                 margin-right: 30px;
                 color: rgb(38, 39, 45);
                 font-size: 16px;
                 font-family: "Lato";
             }
-            .headerAppleBtn{
+            .header-apple-button{
                 background-color: rgb(38, 125, 244);
                 width: 132px;
                 height: 42px;
@@ -107,7 +110,7 @@ header{
         font-weight: 400;
         color: rgb(38, 39, 45);
     }
-    .headerSmallText{
+    .header-small-text{
         margin-top: 40px;
         display: flex;
         justify-content: center;
@@ -122,11 +125,11 @@ header{
             color: rgb(140, 143, 148);
         }
     }
-    .btnWrapper{
+    .button-wrapper{
         width: 100%;
         display: flex;
         justify-content: center;
-    .buttonPlayVideo{
+    .button-play-video{
         height: 50px;
         width: 205px;
         margin-top: 61px;
@@ -162,7 +165,7 @@ header{
         }
     }
     }
-    .phoneImg{
+    .phone-img{
         margin-top: 16px;
         width: 100%;
         display: flex;
@@ -173,24 +176,93 @@ header{
     }
     
 }
+.protection-content{
+    width: 100%;
+    height: 2400px;
+    background-color: rgb(255, 255, 255);
+    .protection-sides{
+        padding-top: 122px;
+        display: flex;
+        justify-content: space-between;
+        .protection-left-side{
+            padding-left: 252px;
+            img{
+                margin-left: 2px;
+                margin-bottom: 42px;
+            }
+            h3{
+                font-size: 26px;
+                font-family: "Lato";
+                color: rgb(38, 39, 45);
+                line-height: 1.308;
+                text-align: left;
+                margin-bottom: 44px;
+            }
+            p{
+                width: 500px;
+                font-size: 18px;
+                font-family: "Lato";
+                text-align: left;
+                line-height: 1.444;
+                color: rgb(140, 143, 148);
+            }
+        }
+        .protection-right-side{
+            padding-right: 246px;
+            img{
+                margin-bottom: 42px;
+            }
+            h3{
+                font-size: 26px;
+                font-family: "Lato";
+                color: rgb(38, 39, 45);
+                line-height: 1.308;
+                text-align: left;
+                margin-bottom: 44px;
+            }
+            p{
+                width: 500px;
+                text-align: left;
+                line-height: 1.444;
+                font-size: 18px;
+                font-family: "Lato";
+                color: rgb(140, 143, 148);
+            }
+        }
+    }
+    .horizontal-line{
+        width: 100%;
+        margin-top: 124px;
+        height: 1px;
+        display: flex;
+        justify-content: center;
+        span{
+            width: 1170px;
+            height: 1px;
+            background-color: rgb(38, 39, 45);
+            opacity: 0.051;
+        }
+    }
+    .protection-phone-hack{
+        margin-top: 122px;
+    }
+}
 .box{
     position: absolute;
     width: 218px;
-    height: 61px;
-    top: 0;
-    right: 800px;
+    height: 33px;
+    top: 100px;
+    left:50px;
     background-color: red;
 }
-.Button {
-    border-width: 1px;
-    border-color: rgb(38, 39, 45);
-    border-style: solid;
-    opacity: 0.102;
+.Divdier {
+    background-color: rgb(38, 39, 45);
+    opacity: 0.051;
     position: absolute;
-    left: 698px;
-    top: 440px;
-    width: 203px;
-    height: 48px;
-    z-index: 293;
+    left: 215px;
+    top: 1559px;
+    width: 1170px;
+    height: 1px;
+    z-index: 258;
   }
   

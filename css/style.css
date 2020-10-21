@@ -483,6 +483,10 @@ header .phone-img {
   margin-top: 28px;
 }
 
+.protection-content .worldmap-content .worldmap-left-side .partners-content img:nth-child(1) {
+  margin-right: 30px;
+}
+
 .box {
   position: absolute;
   width: 218px;

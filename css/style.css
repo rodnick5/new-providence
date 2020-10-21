@@ -324,7 +324,7 @@ header .phone-img {
 }
 
 .protection-content .protection-phone-hack {
-  margin-top: 122px;
+  padding-top: 122px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,7 +338,8 @@ header .phone-img {
 }
 
 .protection-content .protection-phone-hack .phone-right-side {
-  margin-right: 215px;
+  padding-top: 138px;
+  padding-right: 215px;
 }
 
 .protection-content .protection-phone-hack .phone-right-side h3 {
@@ -370,7 +371,7 @@ header .phone-img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 76px;
+  margin-top: 74px;
 }
 
 .protection-content .protection-phone-hack .hack-buttons .button-try {
@@ -487,26 +488,130 @@ header .phone-img {
   margin-right: 30px;
 }
 
+.interfaces-content {
+  height: 1750px;
+  width: 100%;
+  background-color: #f5f5f8;
+}
+
+.interfaces-content .interfaces-texts {
+  padding-top: 146px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.interfaces-content .interfaces-texts h3 {
+  text-align: center;
+  font-size: 42px;
+  font-family: "Varela Round";
+  color: #26272d;
+  line-height: 1;
+  margin-bottom: 0px;
+}
+
+.interfaces-content .interfaces-texts .horizontal-blueline {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 45px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.interfaces-content .interfaces-texts .horizontal-blueline span {
+  width: 50px;
+  height: 2px;
+  display: block;
+  background-color: #267df4;
+}
+
+.interfaces-content .interfaces-texts p {
+  font-size: 12px;
+  padding-top: 42px;
+  margin-bottom: 0px;
+  letter-spacing: 1px;
+  font-family: "Lato";
+  color: #8c8f94;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+}
+
+.interfaces-content .screens-content {
+  padding-top: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.interfaces-content .screens-content .secondary-screen {
+  margin-top: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px 18px 40px 3px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 18px 40px 3px rgba(0, 0, 0, 0.28);
+}
+
+.interfaces-content .screens-content .secondary-screen.left-side {
+  height: 568px;
+  margin-top: 88px;
+}
+
+.interfaces-content .screens-content .secondary-screen.center-left {
+  margin-top: 88px;
+  border-top: rgba(255, 255, 255, 0.1);
+  border: 0;
+  height: 568px;
+}
+
+.interfaces-content .screens-content .secondary-screen.center-right {
+  height: 568px;
+  margin-top: 88px;
+}
+
+.interfaces-content .screens-content .secondary-screen.right-side {
+  height: 568px;
+  margin-top: 88px;
+}
+
+.interfaces-content .screens-content .main-screen {
+  height: 753px;
+}
+
 .box {
   position: absolute;
-  width: 218px;
-  height: 0px;
-  top: 0px;
+  width: 0px;
+  height: 100px;
+  top: 52px;
   right: 400px;
   background-color: red;
 }
 
-.Partners {
+.Landing_Screen {
   font-size: 12px;
   font-family: "Lato";
-  color: #26272d;
+  color: #8c8f94;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.833;
-  text-align: left;
+  text-align: center;
   position: absolute;
-  left: 213.062px;
-  top: 3095.002px;
-  z-index: 226;
+  left: 741.125px;
+  top: 3662.002px;
+  z-index: 190;
 }
 /*# sourceMappingURL=style.css.map */

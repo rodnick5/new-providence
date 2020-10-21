@@ -325,25 +325,184 @@ header .phone-img {
 
 .protection-content .protection-phone-hack {
   margin-top: 122px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.protection-content .protection-phone-hack .phone-right-side {
+  margin-right: 215px;
+}
+
+.protection-content .protection-phone-hack .phone-right-side h3 {
+  margin-bottom: 0px;
+  font-size: 42px;
+  font-family: "Varela Round";
+  width: 240px;
+  color: #26272d;
+  line-height: 1.238;
+  text-align: left;
+}
+
+.protection-content .protection-phone-hack .phone-right-side p {
+  width: 470px;
+  margin-top: 70px;
+  font-size: 20px;
+  font-family: "Lato";
+  color: #8c8f94;
+  line-height: 1.4;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.protection-content .protection-phone-hack .hack-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 76px;
+}
+
+.protection-content .protection-phone-hack .hack-buttons .button-try {
+  background-color: #267df4;
+  width: 202px;
+  height: 42px;
+  margin-right: 20px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.protection-content .protection-phone-hack .hack-buttons .button-try a {
+  padding-top: 7px;
+  color: white;
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.protection-content .protection-phone-hack .hack-buttons .button-try a:hover {
+  text-decoration: none;
+}
+
+.protection-content .protection-phone-hack .hack-buttons .button-try a img {
+  margin-left: 48px;
+}
+
+.protection-content .protection-phone-hack .hack-buttons .button-more {
+  border: 1px solid rgba(38, 39, 45, 0.1);
+  border-radius: 30px;
+  width: 140px;
+  height: 42px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.protection-content .protection-phone-hack .hack-buttons .button-more a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  padding-top: 8px;
+  font-size: 16px;
+  font-family: "Lato";
+  color: #26272d;
+  line-height: 1.2;
+}
+
+.protection-content .protection-phone-hack .hack-buttons .button-more a:hover {
+  text-decoration: none;
+}
+
+.protection-content .worldmap-content {
+  padding-top: 118px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.protection-content .worldmap-content .worldmap-left-side {
+  padding-left: 214px;
+}
+
+.protection-content .worldmap-content .worldmap-left-side h3 {
+  font-size: 42px;
+  font-family: "Varela Round";
+  color: #26272d;
+  line-height: 1.238;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.protection-content .worldmap-content .worldmap-left-side p {
+  margin-top: 62px;
+  font-size: 20px;
+  font-family: "Lato";
+  color: #8c8f94;
+  line-height: 1.4;
+  text-align: left;
+  margin-bottom: 0px;
+  width: 474px;
+}
+
+.protection-content .worldmap-content .worldmap-left-side h5 {
+  margin-top: 64px;
+  font-size: 12px;
+  font-family: "Lato";
+  color: #26272d;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  line-height: 1.833;
+  text-align: left;
+}
+
+.protection-content .worldmap-content .worldmap-left-side .partners-content {
+  margin-top: 28px;
 }
 
 .box {
   position: absolute;
   width: 218px;
-  height: 33px;
-  top: 100px;
-  left: 50px;
+  height: 0px;
+  top: 0px;
+  right: 400px;
   background-color: red;
 }
 
-.Divdier {
-  background-color: #26272d;
-  opacity: 0.051;
+.Partners {
+  font-size: 12px;
+  font-family: "Lato";
+  color: #26272d;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.833;
+  text-align: left;
   position: absolute;
-  left: 215px;
-  top: 1559px;
-  width: 1170px;
-  height: 1px;
-  z-index: 258;
+  left: 213.062px;
+  top: 3095.002px;
+  z-index: 226;
 }
 /*# sourceMappingURL=style.css.map */

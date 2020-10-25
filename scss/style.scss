@@ -4,6 +4,9 @@ html{
         width: 0;
     }
 }
+.container{
+    margin: 0 auto;
+}
 p{
     font-size: 20px;
     font-family: "Lato";
@@ -244,6 +247,11 @@ h2{
         .phone-left-side{
             position: absolute;
             left: 0;
+            width: 1009px;
+            img{
+                position: relative;
+                left: -143px;
+            }
         }
         .phone-right-side{
             padding-top: 138px;
@@ -1031,42 +1039,6 @@ footer{
     }
     }
     }
-.box{
-    background-color: red;
-    width: 695px;
-    height: 400px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-
-}
-
-  
-      
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.container{
-    margin: 0 auto;
-}
-
-
 
 
 @media only screen and (min-width:1601px) and (max-width:1920px){
@@ -1074,14 +1046,100 @@ footer{
         width: 1320px;
     }
 }
-@media only screen and (min-width:1366px) and (max-width:1600px){
+@media only screen and (min-width:1490px) and (max-width:1600px){
     .container{
         width: 1170px;
+    }
+
+}
+@media only screen and (min-width:1366px) and (max-width:1489px){
+    .container{
+        width: 1100px;
+    }
+    .protection-content{
+        .container{
+        
+        .protection-phone-hack{
+            .phone-left-side{
+                width: 675px;
+                img{
+                    width: 790px;
+                    left: -115px;
+                }
+            }
+        }
+        .worldmap-content{
+            .worldmap-left-side{
+                width: 400px;
+            }
+            .worldmap-right-side{
+                height: 400px;
+                img{
+                    height: 400px;
+                }
+            }
+        }
+    }
     }
 }
 @media only screen and (min-width:1152px) and (max-width:1365px){
     .container{
         width: 960px;
+    }
+    .protection-content{
+        .container{
+        .protection-sides{
+            .protection-left-side{
+                p{
+                    width: 400px;
+                }
+            }
+            .protection-right-side{
+                p{
+                    width: 400px;
+                }
+            }
+        }
+        .protection-phone-hack{
+            .phone-left-side{
+                width: 580px;
+                img{
+                    width: 680px;
+                    left: -100px;
+                }
+            }
+        }
+    }
+    .worldmap-content{
+        .worldmap-left-side{
+            width: 400px;
+        }
+        .worldmap-right-side{
+            height: 330px;
+            img{
+                height: 330px;
+            }
+        }
+    }
+}
+    .plans-content{
+        .container{
+        .information-side{
+            .info-block{
+                width: 300px;
+            }
+        }
+        .different-plans{
+            .starter-plan{
+                width: 300px;
+                height: 510px;
+            }
+            .pro-plan{
+                width: 300px;
+                height: 470px;
+            }
+        }
+    }
     }
 }
 @media only screen and (min-width:992px) and (max-width:1151px){

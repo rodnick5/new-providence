@@ -6,6 +6,10 @@ html::-webkit-scrollbar {
   width: 0;
 }
 
+.container {
+  margin: 0 auto;
+}
+
 p {
   font-size: 20px;
   font-family: "Lato";
@@ -337,6 +341,12 @@ header .phone-img {
 .protection-content .protection-phone-hack .phone-left-side {
   position: absolute;
   left: 0;
+  width: 1009px;
+}
+
+.protection-content .protection-phone-hack .phone-left-side img {
+  position: relative;
+  left: -143px;
 }
 
 .protection-content .protection-phone-hack .phone-right-side {
@@ -1367,34 +1377,76 @@ footer .container .more-content h5 span {
   font-size: 12px;
 }
 
-.box {
-  background-color: red;
-  width: 695px;
-  height: 400px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.container {
-  margin: 0 auto;
-}
-
 @media only screen and (min-width: 1601px) and (max-width: 1920px) {
   .container {
     width: 1320px;
   }
 }
 
-@media only screen and (min-width: 1366px) and (max-width: 1600px) {
+@media only screen and (min-width: 1490px) and (max-width: 1600px) {
   .container {
     width: 1170px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1489px) {
+  .container {
+    width: 1100px;
+  }
+  .protection-content .container .protection-phone-hack .phone-left-side {
+    width: 675px;
+  }
+  .protection-content .container .protection-phone-hack .phone-left-side img {
+    width: 790px;
+    left: -115px;
+  }
+  .protection-content .container .worldmap-content .worldmap-left-side {
+    width: 400px;
+  }
+  .protection-content .container .worldmap-content .worldmap-right-side {
+    height: 400px;
+  }
+  .protection-content .container .worldmap-content .worldmap-right-side img {
+    height: 400px;
   }
 }
 
 @media only screen and (min-width: 1152px) and (max-width: 1365px) {
   .container {
     width: 960px;
+  }
+  .protection-content .container .protection-sides .protection-left-side p {
+    width: 400px;
+  }
+  .protection-content .container .protection-sides .protection-right-side p {
+    width: 400px;
+  }
+  .protection-content .container .protection-phone-hack .phone-left-side {
+    width: 580px;
+  }
+  .protection-content .container .protection-phone-hack .phone-left-side img {
+    width: 680px;
+    left: -100px;
+  }
+  .protection-content .worldmap-content .worldmap-left-side {
+    width: 400px;
+  }
+  .protection-content .worldmap-content .worldmap-right-side {
+    height: 330px;
+  }
+  .protection-content .worldmap-content .worldmap-right-side img {
+    height: 330px;
+  }
+  .plans-content .container .information-side .info-block {
+    width: 300px;
+  }
+  .plans-content .container .different-plans .starter-plan {
+    width: 300px;
+    height: 510px;
+  }
+  .plans-content .container .different-plans .pro-plan {
+    width: 300px;
+    height: 470px;
   }
 }
 

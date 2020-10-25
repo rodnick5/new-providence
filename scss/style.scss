@@ -872,14 +872,178 @@ h2{
 }
 footer{
     .container{
-        
+        h3{
+            display: flex;
+            justify-content: center;
+            line-height: 1;
+            margin-top: 86px;
+        }
+        .subscribe-form{
+            width: 100%;
+            margin-top: 48px;
+            display: flex;
+            justify-content: center;
+            form{
+        width: 560px;
+        height: 48px;
+        border: 1px solid rgba(38, 41, 44 , 0.2);
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-between;  
+        align-items: center;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        input{
+            border: none;
+            background-color: transparent;
+            outline: none; 
+            font-size: 16px;
+            font-family: "Lato";
+            color: rgb(58, 61, 75);
+            line-height: 1.2;
+            text-align: left;
+            margin-left: 22px;
+            width:290px;
+        }
+        .button-subscribe{
+            background-color: rgb(111, 199, 84);
+            font-size: 16px;
+            font-family: "Lato";
+            color: rgb(255, 255, 255);
+            line-height: 1;
+            text-align: center;
+            width: 134px;
+            height: 42px;
+            margin-right: 3px;
+            border: none;
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
     }
 }
-  
-  
-  
-  
+    }
+    h6{
+        margin-top: 28px;
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 0px;
+        font-family: "Lato";
+        color: rgb(140, 143, 148);
+    }
+    .help-sides{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 460px;
+        margin-top: 82px;
+        border-top: 1px solid rgba(38, 41, 44 , 0.05);
+        border-bottom:1px solid rgba(38, 41, 44 , 0.05);
+        .help-left-side{
+            margin-top: 90px;
+            p{
+                font-size: 14px;
+                margin-top: 34px;
+                width: 256px;
+                color: rgb(140, 143, 148);
+            }
+            .appstore-button{
+                margin-top: 30px;
+                
+                width: 140px;
+                height: 42px;
+            }
+            .social-links{
+                user-select: none;
+                margin-top: 40px;
+                a{
+                    margin-left: 28px;
+                    user-select: none;
+                    img{
+                    
+                    }
+                }
+                a:nth-child(1){
+                    margin-left: 0px;
+                }
+            }
+        }
+        .help-right-side{
+            margin-top: 90px;
+            display: flex;
+            flex-direction: row;
+            .contact-cols{
+                &.one{
+                    margin-right:96px;
+                }
+                &.two{
+                    margin-right: 60px;
+                }
+                &.three{
+                    margin-right: 95px;
+                }
+                h5{
+                    font-size: 12px;
+                    font-family: "Lato";
+                    color: rgb(38, 39, 45);
+                    text-transform: uppercase;
+                    margin-bottom: 2px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
 
+                }
+                p{
+                    font-size: 16px;
+                    font-family: "Lato";
+                    line-height: 1;
+                    margin-top: 22px;
+                    color: rgb(140, 143, 148);
+                }
+                
+            }
+
+        }
+    }
+    .more-content{
+        height: 90px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        p{
+            font-size: 14px;
+            color: rgb(140, 143, 148);
+        }
+        h5{
+            font-size: 9px;
+            font-family: "Lato";
+            color: rgb(38, 39, 45);
+            font-weight: bold;
+            text-transform: uppercase;
+            span{
+                color: rgb(111, 199, 84);
+                font-size: 12px;
+            }
+        }
+
+    }
+    }
+    }
+.box{
+    background-color: red;
+    width: 695px;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+  
+      
+      
 
 
 

@@ -1159,6 +1159,223 @@ header .phone-img {
   color: #267df4;
 }
 
+footer .container h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1;
+  margin-top: 86px;
+}
+
+footer .container .subscribe-form {
+  width: 100%;
+  margin-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .container .subscribe-form form {
+  width: 560px;
+  height: 48px;
+  border: 1px solid rgba(38, 41, 44, 0.2);
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+footer .container .subscribe-form form input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 16px;
+  font-family: "Lato";
+  color: #3a3d4b;
+  line-height: 1.2;
+  text-align: left;
+  margin-left: 22px;
+  width: 290px;
+}
+
+footer .container .subscribe-form form .button-subscribe {
+  background-color: #6fc754;
+  font-size: 16px;
+  font-family: "Lato";
+  color: white;
+  line-height: 1;
+  text-align: center;
+  width: 134px;
+  height: 42px;
+  margin-right: 3px;
+  border: none;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+footer .container h6 {
+  margin-top: 28px;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 0px;
+  font-family: "Lato";
+  color: #8c8f94;
+}
+
+footer .container .help-sides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 460px;
+  margin-top: 82px;
+  border-top: 1px solid rgba(38, 41, 44, 0.05);
+  border-bottom: 1px solid rgba(38, 41, 44, 0.05);
+}
+
+footer .container .help-sides .help-left-side {
+  margin-top: 90px;
+}
+
+footer .container .help-sides .help-left-side p {
+  font-size: 14px;
+  margin-top: 34px;
+  width: 256px;
+  color: #8c8f94;
+}
+
+footer .container .help-sides .help-left-side .appstore-button {
+  margin-top: 30px;
+  width: 140px;
+  height: 42px;
+}
+
+footer .container .help-sides .help-left-side .social-links {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-top: 40px;
+}
+
+footer .container .help-sides .help-left-side .social-links a {
+  margin-left: 28px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+footer .container .help-sides .help-left-side .social-links a:nth-child(1) {
+  margin-left: 0px;
+}
+
+footer .container .help-sides .help-right-side {
+  margin-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .container .help-sides .help-right-side .contact-cols.one {
+  margin-right: 96px;
+}
+
+footer .container .help-sides .help-right-side .contact-cols.two {
+  margin-right: 60px;
+}
+
+footer .container .help-sides .help-right-side .contact-cols.three {
+  margin-right: 95px;
+}
+
+footer .container .help-sides .help-right-side .contact-cols h5 {
+  font-size: 12px;
+  font-family: "Lato";
+  color: #26272d;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+footer .container .help-sides .help-right-side .contact-cols p {
+  font-size: 16px;
+  font-family: "Lato";
+  line-height: 1;
+  margin-top: 22px;
+  color: #8c8f94;
+}
+
+footer .container .more-content {
+  height: 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .container .more-content p {
+  font-size: 14px;
+  color: #8c8f94;
+}
+
+footer .container .more-content h5 {
+  font-size: 9px;
+  font-family: "Lato";
+  color: #26272d;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+footer .container .more-content h5 span {
+  color: #6fc754;
+  font-size: 12px;
+}
+
+.box {
+  background-color: red;
+  width: 695px;
+  height: 400px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 .container {
   margin: 0 auto;
 }

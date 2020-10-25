@@ -1444,9 +1444,15 @@ footer .container .more-content h5 span {
     width: 300px;
     height: 510px;
   }
+  .plans-content .container .different-plans .starter-plan .plan-button {
+    margin-top: 63px;
+  }
   .plans-content .container .different-plans .pro-plan {
     width: 300px;
     height: 470px;
+  }
+  .plans-content .container .different-plans .pro-plan .plan-button {
+    margin-top: 20px;
   }
 }
 

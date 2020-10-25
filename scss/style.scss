@@ -1133,10 +1133,16 @@ footer{
             .starter-plan{
                 width: 300px;
                 height: 510px;
+                .plan-button{
+                    margin-top: 63px;
+                }
             }
             .pro-plan{
                 width: 300px;
                 height: 470px;
+                .plan-button{
+                    margin-top: 20px;
+                }
             }
         }
     }

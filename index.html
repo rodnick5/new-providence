@@ -10,18 +10,19 @@
     <title>New Providence</title>
 </head>
 <body>
+    <a class="back_to_top">↑</a>
     <header>
         <div class="container">
         <nav>
             <div class="header-left-side">
                 <div class="menu-burger"><span></span></div>
-                    <a href="">Tour</a>
+                    <a href="#tour">Tour</a>
                         <a href="">Features</a>
-                <a href="">Pricing</a>
+                <a href="#pricing">Pricing</a>
             </div>
             <div class="header-center-side"><img src="img/LogoHeader.png" alt="logo"></div>
                 <div class="header-right-side">
-                    <a href="" class="header-help">Help</a>
+                    <a href="#help" class="header-help">Help</a>
                         <a href="">Contacts</a>
                     <div class="header-apple-button"><a href="" ><img src="img/AppleIcon.png" alt="apple"> Get App</a></div>
                 </div>
@@ -63,7 +64,7 @@
                 </div>
             </div>
     </div>
-    <div class="worldmap-content">
+    <div class="worldmap-content" id="tour">
         <div class="worldmap-left-side">
             <h3>We are almost <br>everywhere</h3>
                 <p>Now the races of these two have been for some ages utterly extinct, and besides to discourse any further of them would not be at all to my purpose.<br><br>Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</p>
@@ -133,14 +134,14 @@
         </div>
     </div>  
 </div>
-<div class="plans-content">
+<div class="plans-content" id="pricing">
     <div class="container">
         <div class="information-side">
             <h3>Choose your perfect plan</h3>
             <h5>You are</h5>
             <div class="change-blocks">
-                <div class="individual-block"><p class="active-button">Individual</p></div>
-                <div class="company-block"><p>Company</p></div>
+                <div id="individual_block" class="individual-block active-btn"><p id="individual" class="indiv-button active-text">Individual</p></div>
+                <div id="company_block" class="company-block"><p id="company" class="comp-button">Company</p></div>
             </div>
             <p class="info-block">Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</p>
             <h6>Have a bigger team? <a href="">Let‘s talk</a> </h6>
@@ -170,7 +171,7 @@
         </div>
     </div>
     </div>
-<footer>
+<footer id="help">
     <div class="container">
         <h3>Subscribe our newsletters</h3>
         <div class="subscribe-form">
@@ -197,24 +198,24 @@
             <div class="help-right-side">
                 <div class="contact-cols one">
                     <h5>Learn More</h5>
-                    <p>How it works?</p>
-                    <p>Meeting tools</p>
-                    <p>Live striming</p>
-                    <p>Contat method</p>
+                    <a href="">How it works?</a>
+                    <a href="">Meeting tools</a>
+                    <a href="">Live striming</a>
+                    <a href="">Contat method</a>
                 </div>
                 <div class="contact-cols two">
                     <h5>About Us</h5>
-                    <p>About us</p>
-                    <p>Features</p>
-                    <p>Privacy police</p>
-                    <p>Terms & Conditions</p>
+                    <a href="">About us</a>
+                    <a href="">Features</a>
+                    <a href="">Privacy police</a>
+                    <a href="">Terms & Conditions</a>
                 </div>
                 <div class="contact-cols three">
                     <h5>Support</h5>
-                    <p>F.A.Q.</p>
-                    <p>Contact us</p>
-                    <p>Live chat</p>
-                    <p>Phone call</p>
+                    <a href="">F.A.Q.</a>
+                    <a href="">Contact us</a>
+                    <a href="">Live chat</a>
+                    <a href="">Phone call</a>
                 </div>
             </div>
         </div>
@@ -225,5 +226,6 @@
     </div>
 </footer>
     <div class="box"></div>
+    <script src="javascript/script.js"></script>
 </body>
 </html>

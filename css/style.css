@@ -17,6 +17,49 @@ p {
   margin-bottom: 0px;
 }
 
+.back_to_top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 30px;
+  background: grey;
+  color: #444;
+  cursor: pointer;
+  border-radius: 2px;
+  display: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+.back_to_top:hover {
+  background: #3a3d4b;
+}
+
+.back_to_top-show {
+  display: block;
+}
+
+.active-btn {
+  background-color: white;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(61, 61, 62, 0.15), 0px 30px 50px 0px rgba(92, 95, 101, 0.28);
+          box-shadow: 0px 5px 20px 0px rgba(61, 61, 62, 0.15), 0px 30px 50px 0px rgba(92, 95, 101, 0.28);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.active-text {
+  color: #26292c;
+}
+
 h3 {
   margin-bottom: 0px;
   font-size: 42px;
@@ -341,7 +384,7 @@ header .phone-img {
 .protection-content .protection-phone-hack .phone-left-side {
   position: absolute;
   left: 0;
-  width: 1009px;
+  width: 866px;
 }
 
 .protection-content .protection-phone-hack .phone-left-side img {
@@ -537,7 +580,8 @@ header .phone-img {
 
 .interfaces-content .screens-content {
   padding-top: 50px;
-  width: 100%;
+  width: 1920px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -853,16 +897,12 @@ header .phone-img {
 }
 
 .plans-content .container .information-side .change-blocks .individual-block {
-  background-color: white;
   width: 124px;
   height: 42px;
   margin-left: 2px;
-  border-radius: 25px;
-  -webkit-box-shadow: 0px 5px 20px 0px rgba(61, 61, 62, 0.15), 0px 30px 50px 0px rgba(92, 95, 101, 0.28);
-          box-shadow: 0px 5px 20px 0px rgba(61, 61, 62, 0.15), 0px 30px 50px 0px rgba(92, 95, 101, 0.28);
 }
 
-.plans-content .container .information-side .change-blocks .individual-block .active-button {
+.plans-content .container .information-side .change-blocks .individual-block .indiv-button {
   width: 124px;
   height: 42px;
   display: -webkit-box;
@@ -877,14 +917,13 @@ header .phone-img {
           align-items: center;
   font-size: 16px;
   font-family: "Lato";
-  color: #26292c;
 }
 
 .plans-content .container .information-side .change-blocks .company-block {
   margin-right: 2px;
 }
 
-.plans-content .container .information-side .change-blocks .company-block p {
+.plans-content .container .information-side .change-blocks .company-block .comp-button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1316,6 +1355,16 @@ footer .container .help-sides .help-right-side {
           flex-direction: row;
 }
 
+footer .container .help-sides .help-right-side .contact-cols {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 footer .container .help-sides .help-right-side .contact-cols.one {
   margin-right: 96px;
 }
@@ -1338,7 +1387,7 @@ footer .container .help-sides .help-right-side .contact-cols h5 {
   letter-spacing: 1px;
 }
 
-footer .container .help-sides .help-right-side .contact-cols p {
+footer .container .help-sides .help-right-side .contact-cols a {
   font-size: 16px;
   font-family: "Lato";
   line-height: 1;
@@ -1377,6 +1426,12 @@ footer .container .more-content h5 span {
   font-size: 12px;
 }
 
+@media only screen and (min-width: 1921px) {
+  .container {
+    width: 1450px;
+  }
+}
+
 @media only screen and (min-width: 1601px) and (max-width: 1920px) {
   .container {
     width: 1320px;
@@ -1399,6 +1454,12 @@ footer .container .more-content h5 span {
   .protection-content .container .protection-phone-hack .phone-left-side img {
     width: 790px;
     left: -115px;
+  }
+  .protection-content .container .protection-phone-hack .phone-right-side {
+    padding-top: 80px;
+  }
+  .protection-content .container .worldmap-content {
+    margin-top: 280px;
   }
   .protection-content .container .worldmap-content .worldmap-left-side {
     width: 400px;
@@ -1427,6 +1488,12 @@ footer .container .more-content h5 span {
   .protection-content .container .protection-phone-hack .phone-left-side img {
     width: 680px;
     left: -100px;
+  }
+  .protection-content .container .protection-phone-hack .phone-right-side {
+    padding-top: 80px;
+  }
+  .protection-content .worldmap-content {
+    margin-top: 280px;
   }
   .protection-content .worldmap-content .worldmap-left-side {
     width: 400px;
@@ -1478,5 +1545,17 @@ footer .container .more-content h5 span {
   .container {
     width: 290px;
   }
+}
+
+.Individual {
+  font-size: 16px;
+  font-family: "Lato";
+  color: #26292c;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 245.312px;
+  top: 6311.9px;
+  z-index: 113;
 }
 /*# sourceMappingURL=style.css.map */

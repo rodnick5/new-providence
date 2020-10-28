@@ -3,7 +3,25 @@ html {
 }
 
 html::-webkit-scrollbar {
-  width: 0;
+  width: 15px;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #ebebed;
+  width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #8c8f94;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+html::-webkit-scrollbar-button {
+  background-color: #8c8f94;
 }
 
 .container {
@@ -67,6 +85,20 @@ h3 {
   font-family: "Varela Round";
 }
 
+.scrolled-menu-nav {
+  position: fixed;
+  background-color: grey;
+  transition: all 0.5s;
+  margin-top: 0px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  top: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
 header {
   background-image: url("../img/background.png");
   background-repeat: no-repeat;
@@ -77,7 +109,11 @@ header {
   height: 1000px;
 }
 
-header nav {
+header .container {
+  padding-top: 44px;
+}
+
+header .container nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,13 +124,13 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 999;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 44px;
 }
 
-header nav .header-left-side {
+header .container nav .header-left-side {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,14 +140,14 @@ header nav .header-left-side {
           flex-direction: row;
 }
 
-header nav .header-left-side .menu-burger {
+header .container nav .header-left-side .menu-burger {
   width: 20px;
   height: 17px;
   margin-right: 30px;
   display: block;
 }
 
-header nav .header-left-side .menu-burger span, header nav .header-left-side .menu-burger span:before, header nav .header-left-side .menu-burger span:after {
+header .container nav .header-left-side .menu-burger span, header .container nav .header-left-side .menu-burger span:before, header .container nav .header-left-side .menu-burger span:after {
   content: '';
   margin-top: 8px;
   position: absolute;
@@ -121,24 +157,24 @@ header nav .header-left-side .menu-burger span, header nav .header-left-side .me
   height: 2px;
 }
 
-header nav .header-left-side .menu-burger span:before {
+header .container nav .header-left-side .menu-burger span:before {
   content: '';
   margin-top: 5px;
 }
 
-header nav .header-left-side .menu-burger span:after {
+header .container nav .header-left-side .menu-burger span:after {
   content: '';
   margin-top: -5px;
 }
 
-header nav .header-left-side a {
+header .container nav .header-left-side a {
   color: #26272d;
   line-height: 1;
   font-family: 'Lato';
   margin-right: 42px;
 }
 
-header nav .header-right-side {
+header .container nav .header-right-side {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,18 +187,18 @@ header nav .header-right-side {
           align-items: center;
 }
 
-header nav .header-right-side a {
+header .container nav .header-right-side a {
   margin-right: 30px;
   font-size: 16px;
   font-family: "Lato";
   color: #26272d;
 }
 
-header nav .header-right-side .header-help {
+header .container nav .header-right-side .header-help {
   color: rgba(27, 28, 30, 0.4);
 }
 
-header nav .header-right-side .header-apple-button {
+header .container nav .header-right-side .header-apple-button {
   background-color: #267df4;
   width: 132px;
   height: 42px;
@@ -176,7 +212,7 @@ header nav .header-right-side .header-apple-button {
   -o-border-radius: 40px;
 }
 
-header nav .header-right-side .header-apple-button a {
+header .container nav .header-right-side .header-apple-button a {
   padding-left: 17px;
   margin-right: 0;
   display: -webkit-box;
@@ -192,12 +228,12 @@ header nav .header-right-side .header-apple-button a {
   color: white;
 }
 
-header nav .header-right-side .header-apple-button a img {
+header .container nav .header-right-side .header-apple-button a img {
   padding-right: 14px;
   padding-bottom: 3px;
 }
 
-header h2 {
+header .container h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,7 +249,7 @@ header h2 {
   color: #26272d;
 }
 
-header .header-small-text {
+header .container .header-small-text {
   margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,7 +260,7 @@ header .header-small-text {
   width: 100%;
 }
 
-header .header-small-text h6 {
+header .container .header-small-text h6 {
   width: 790px;
   text-align: center;
   font-size: 20px;
@@ -234,7 +270,7 @@ header .header-small-text h6 {
   color: #8c8f94;
 }
 
-header .button-wrapper {
+header .container .button-wrapper {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,7 +280,7 @@ header .button-wrapper {
           justify-content: center;
 }
 
-header .button-wrapper .button-play-video {
+header .container .button-wrapper .button-play-video {
   height: 50px;
   width: 205px;
   margin-top: 61px;
@@ -272,7 +308,7 @@ header .button-wrapper .button-play-video {
           align-items: center;
 }
 
-header .button-wrapper .button-play-video a {
+header .container .button-wrapper .button-play-video a {
   padding-top: 11px;
   text-align: center;
   width: 100%;
@@ -282,16 +318,16 @@ header .button-wrapper .button-play-video a {
   color: #26272d;
 }
 
-header .button-wrapper .button-play-video a:hover {
+header .container .button-wrapper .button-play-video a:hover {
   text-decoration: none;
 }
 
-header .button-wrapper .button-play-video a img {
+header .container .button-wrapper .button-play-video a img {
   padding-right: 14px;
   padding-bottom: 2px;
 }
 
-header .phone-img {
+header .container .phone-img {
   margin-top: 18px;
   width: 100%;
   display: -webkit-box;
@@ -904,6 +940,11 @@ header .phone-img {
 
 .plans-content .container .information-side .change-blocks .individual-block .indiv-button {
   width: 124px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
   height: 42px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -928,12 +969,17 @@ header .phone-img {
       -ms-flex-pack: center;
           justify-content: center;
   width: 124px;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   height: 42px;
   margin-top: 0px;
   font-size: 16px;
@@ -1427,25 +1473,25 @@ footer .container .more-content h5 span {
 }
 
 @media only screen and (min-width: 1921px) {
-  .container {
+  .container, nav {
     width: 1450px;
   }
 }
 
 @media only screen and (min-width: 1601px) and (max-width: 1920px) {
-  .container {
+  .container, nav {
     width: 1320px;
   }
 }
 
 @media only screen and (min-width: 1490px) and (max-width: 1600px) {
-  .container {
+  .container, nav {
     width: 1170px;
   }
 }
 
 @media only screen and (min-width: 1366px) and (max-width: 1489px) {
-  .container {
+  .container, nav {
     width: 1100px;
   }
   .protection-content .container .protection-phone-hack .phone-left-side {
@@ -1473,7 +1519,7 @@ footer .container .more-content h5 span {
 }
 
 @media only screen and (min-width: 1152px) and (max-width: 1365px) {
-  .container {
+  .container, nav {
     width: 960px;
   }
   .protection-content .container .protection-sides .protection-left-side p {

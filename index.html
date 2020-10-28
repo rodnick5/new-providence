@@ -10,10 +10,27 @@
     <title>New Providence</title>
 </head>
 <body>
+    <form name="myForm">
+        <input type="radio" name="languages" checked="checked" value="Java" /><span>Java</span>
+        <input type="radio" name="languages" value="C#" /><span>C#</span>
+        <input type="radio" name="languages" value="C++" /><span>C++</span>
+    </form>
+    <div id="printBlock"></div>
+    <script>
+    function onclick(e){
+     
+        var printBlock = document.getElementById("printBlock");
+        var language = e.target.value;
+        printBlock.textContent = "Вы выбрали: " + language;
+    }
+    for (var i = 0; i < myForm.languages.length; i++) {
+        myForm.languages[i].addEventListener("click", onclick);
+    }
+    </script>
     <a class="back_to_top">↑</a>
     <header>
         <div class="container">
-        <nav>
+        <nav id='navigation'>
             <div class="header-left-side">
                 <div class="menu-burger"><span></span></div>
                     <a href="#tour">Tour</a>

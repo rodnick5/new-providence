@@ -32,8 +32,17 @@ indiv.onclick = function(){
         setTimeout(backToTop, 0);
       }
     }
-  
+    function navScroll() {
+        let scrolled = window.pageYOffset;
+        if( scrolled > 90){
+            nav.classList.add('scrolled-menu-nav');
+        }
+        if(scrolled < 90){
+            nav.classList.remove('scrolled-menu-nav');
+        }
+        }
     var goTopBtn = document.querySelector('.back_to_top');
-  
+    let nav = document.getElementById('navigation');
     window.addEventListener('scroll', trackScroll);
     goTopBtn.addEventListener('click', backToTop);
+    window.addEventListener('scroll', navScroll);

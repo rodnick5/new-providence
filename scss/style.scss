@@ -1,22 +1,7 @@
 html{
     overflow-x: hidden;
     &::-webkit-scrollbar {
-        width: 15px;
-    }
-    &::-webkit-scrollbar-track{
-        background-color: rgb(235, 235, 237);
-        width: 10px;
-    }
-    &::-webkit-scrollbar-thumb{
-        background-color: rgb(140, 143, 148);
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-    }
-    &::-webkit-scrollbar-button{
-        background-color:  rgb(140, 143, 148);
+        width: 0;
     }
 }
 .container{
@@ -77,15 +62,18 @@ h3{
 .scrolled-menu-nav{
     position: fixed;
     background-color: grey;
+    height: 50px;
     transition: all 0.5s;
-    margin-top: 0px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     top: 0;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
+    -webkit-box-shadow: 0px 8px 35px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 8px 35px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 8px 35px 2px rgba(0,0,0,0.75);
 }
 header{
     background-image: url('../img/background.png');
@@ -102,9 +90,14 @@ header{
         flex-direction: row;
         align-items: center;
         z-index: 999;
+        transition: all 0.5s;
         justify-content: space-between;
         
-        .header-left-side{
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+.header-left-side{
             display: flex;
             flex-direction: row;
             .menu-burger{

@@ -36,9 +36,11 @@ indiv.onclick = function(){
         let scrolled = window.pageYOffset;
         if( scrolled > 90){
             nav.classList.add('scrolled-menu-nav');
+            nav.style.justifyContent = 'space-around'; 
         }
         if(scrolled < 90){
             nav.classList.remove('scrolled-menu-nav');
+            nav.style.justifyContent = 'space-between';
         }
         }
     var goTopBtn = document.querySelector('.back_to_top');

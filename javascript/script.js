@@ -17,12 +17,14 @@ indiv.onclick = function(){
     function trackScroll() {
       var scrolled = window.pageYOffset;
       var coords = document.documentElement.clientHeight;
-  
-      if (scrolled > coords) {
+      let width = document.documentElement.clientWidth;
+      if(width > 1023){
+        if (scrolled > coords) {
         goTopBtn.classList.add('back_to_top-show');
-      }
-      if (scrolled < coords) {
+        }
+        if (scrolled < coords) {
         goTopBtn.classList.remove('back_to_top-show');
+      }
       }
     }
   
@@ -34,7 +36,7 @@ indiv.onclick = function(){
     }
     function navScroll() {
         let width = document.documentElement.clientWidth;
-        if (width > 1200){
+        if (width > 991){
            let scrolled = window.pageYOffset;
         if( scrolled > 90){
             nav.classList.add('scrolled-menu-nav');

@@ -6,6 +6,14 @@ html::-webkit-scrollbar {
   width: 0;
 }
 
+* {
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
 .container {
   margin: 0 auto;
 }
@@ -57,7 +65,7 @@ p {
 }
 
 .active-text {
-  color: #26292c;
+  color: #26292c !important;
 }
 
 h3 {
@@ -353,14 +361,12 @@ header .container .phone-img {
   font-family: "Lato";
   color: #26272d;
   line-height: 1.308;
-  text-align: left;
   margin-bottom: 44px;
 }
 
 .protection-content .container .protection-sides .protection-left-side p {
   width: 500px;
   font-size: 18px;
-  text-align: left;
   line-height: 1.444;
 }
 
@@ -373,13 +379,11 @@ header .container .phone-img {
   font-family: "Lato";
   color: #26272d;
   line-height: 1.308;
-  text-align: left;
   margin-bottom: 44px;
 }
 
 .protection-content .container .protection-sides .protection-right-side p {
   width: 500px;
-  text-align: left;
   line-height: 1.444;
   font-size: 18px;
 }
@@ -422,16 +426,13 @@ header .container .phone-img {
 }
 
 .protection-content .container .protection-phone-hack .phone-right-side h3 {
-  width: 240px;
   line-height: 1.238;
-  text-align: left;
 }
 
 .protection-content .container .protection-phone-hack .phone-right-side p {
   width: 470px;
   margin-top: 70px;
   line-height: 1.4;
-  text-align: left;
 }
 
 .protection-content .container .protection-phone-hack .hack-buttons {
@@ -522,13 +523,11 @@ header .container .phone-img {
 
 .protection-content .container .worldmap-content .worldmap-left-side h3 {
   line-height: 1.238;
-  text-align: left;
 }
 
 .protection-content .container .worldmap-content .worldmap-left-side p {
   margin-top: 62px;
   line-height: 1.4;
-  text-align: left;
   width: 474px;
 }
 
@@ -541,7 +540,6 @@ header .container .phone-img {
   text-transform: uppercase;
   margin-bottom: 0px;
   line-height: 1.833;
-  text-align: left;
 }
 
 .protection-content .container .worldmap-content .worldmap-left-side .partners-content {
@@ -1555,7 +1553,7 @@ footer .container .more-content h5 span {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1151px) {
-  .container {
+  .container, nav {
     width: 960px;
   }
   .protection-content .container .protection-sides {
@@ -1591,14 +1589,14 @@ footer .container .more-content h5 span {
     width: 270px;
   }
   .plans-content .container .plans-sides .different-plans .starter-plan {
-    width: 250px;
+    width: 300px;
     height: 510px;
   }
   .plans-content .container .plans-sides .different-plans .starter-plan .plan-button {
     margin-top: 63px;
   }
   .plans-content .container .plans-sides .different-plans .pro-plan {
-    width: 250px;
+    width: 300px;
     height: 470px;
   }
   .plans-content .container .plans-sides .different-plans .pro-plan .plan-button {
@@ -1607,7 +1605,7 @@ footer .container .more-content h5 span {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .container {
+  .container, nav {
     width: 720px;
   }
   .protection-content .container .protection-sides {
@@ -1621,24 +1619,37 @@ footer .container .more-content h5 span {
     margin-top: 30px;
   }
   .protection-content .container .protection-phone-hack {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding-top: 50px;
   }
   .protection-content .container .protection-phone-hack .phone-left-side {
-    width: 680px;
+    width: 750px;
   }
   .protection-content .container .protection-phone-hack .phone-left-side img {
     left: -90px;
-    width: 680px;
+    width: 750px;
   }
   .protection-content .container .protection-phone-hack .phone-right-side {
-    padding-top: 650px;
+    text-align: center;
+    padding-top: 670px;
+  }
+  .protection-content .container .protection-phone-hack .phone-right-side .hack-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .protection-content .container .horizontal-line {
+    margin-top: 50px;
   }
   .protection-content .container .worldmap-content {
     margin-top: 150px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .protection-content .container .worldmap-content .worldmap-right-side {
     height: 370px;
@@ -1647,7 +1658,11 @@ footer .container .more-content h5 span {
     height: 370px;
   }
   .protection-content .container .worldmap-content .worldmap-left-side {
-    margin-top: 480px;
+    text-align: center;
+    margin-top: 470px;
+  }
+  .protection-content .container .worldmap-content .worldmap-left-side h3 {
+    text-align: center;
   }
   .plans-content .container .plans-sides {
     -ms-flex-wrap: wrap;
@@ -1655,6 +1670,19 @@ footer .container .more-content h5 span {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .plans-content .container .plans-sides .information-side {
+    width: 100%;
+    text-align: center;
+  }
+  .plans-content .container .plans-sides .information-side h3 {
+    width: 100%;
+  }
+  .plans-content .container .plans-sides .information-side .change-blocks {
+    margin: 0 auto;
+  }
+  .plans-content .container .plans-sides .information-side .info-block {
+    margin: 72px auto 0px;
   }
   header .container nav .header-left-side a {
     display: none;
@@ -1667,6 +1695,13 @@ footer .container .more-content h5 span {
   }
   header .container h2 {
     font-size: 54px;
+  }
+  .comments-content .container .comments-photos img {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
   }
   footer .container .help-sides .help-right-side .contact-cols.one {
     margin-right: 30px;
@@ -1683,23 +1718,441 @@ footer .container .more-content h5 span {
   .container {
     width: 490px;
   }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 575px) {
-  .container {
-    width: 290px;
+  .protection-content .container .protection-sides {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .protection-content .container .protection-sides .protection-left-side p {
+    width: 400px;
+  }
+  .protection-content .container .protection-sides .protection-right-side {
+    margin-top: 30px;
+  }
+  .protection-content .container .protection-sides .protection-right-side p {
+    width: 400px;
+  }
+  .protection-content .container .protection-phone-hack {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 50px;
+  }
+  .protection-content .container .protection-phone-hack .phone-left-side {
+    width: 480px;
+  }
+  .protection-content .container .protection-phone-hack .phone-left-side img {
+    left: -90px;
+    width: 570px;
+  }
+  .protection-content .container .protection-phone-hack .phone-right-side {
+    text-align: center;
+    padding-top: 600px;
+  }
+  .protection-content .container .protection-phone-hack .phone-right-side .hack-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .protection-content .container .horizontal-line {
+    margin-top: 50px;
+  }
+  .protection-content .container .worldmap-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 150px;
+  }
+  .protection-content .container .worldmap-content .worldmap-right-side {
+    height: 290px;
+  }
+  .protection-content .container .worldmap-content .worldmap-right-side img {
+    height: 290px;
+  }
+  .protection-content .container .worldmap-content .worldmap-left-side {
+    text-align: center;
+    margin-top: 410px;
+  }
+  .protection-content .container .worldmap-content .worldmap-left-side h3 {
+    text-align: center;
+  }
+  .plans-content {
+    padding-bottom: 50px;
+  }
+  .plans-content .container .plans-sides {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .plans-content .container .plans-sides .information-side {
+    width: 100%;
+    text-align: center;
+  }
+  .plans-content .container .plans-sides .information-side h3 {
+    width: 100%;
+  }
+  .plans-content .container .plans-sides .information-side .change-blocks {
+    margin: 0 auto;
+  }
+  .plans-content .container .plans-sides .information-side .info-block {
+    margin: 72px auto 0px;
+  }
+  .plans-content .container .plans-sides .different-plans {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 1200px;
+  }
+  .plans-content .container .plans-sides .different-plans .pro-plan {
+    margin-top: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  header .container .phone-img {
+    margin-top: 60px;
+  }
+  header .container .phone-img img {
+    width: 450px;
+  }
+  header .container nav .header-left-side a {
+    display: none;
+  }
+  header .container nav .header-center-side {
+    display: none;
+  }
+  header .container nav .header-right-side a {
+    display: none;
+  }
+  header .container h2 {
+    font-size: 35px;
+  }
+  .comments-content .container .comments-photos img {
+    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+  }
+  footer .container h3 {
+    font-size: 35px;
+  }
+  footer .container .help-sides {
+    height: 750px;
+  }
+  footer .container .help-sides .help-left-side p {
+    width: 200px;
+  }
+  footer .container .help-sides .help-left-side .social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .container .help-sides .help-left-side .social-links a {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  footer .container .help-sides .help-right-side {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .container .help-sides .help-right-side .contact-cols {
+    margin-top: 30px;
+  }
+  footer .container .help-sides .help-right-side .contact-cols.one {
+    margin-right: 30px;
+  }
+  footer .container .help-sides .help-right-side .contact-cols.two {
+    margin-right: 30px;
+  }
+  footer .container .help-sides .help-right-side .contact-cols.three {
+    margin-right: 0px;
   }
 }
 
-.Individual {
-  font-size: 16px;
-  font-family: "Lato";
-  color: #26292c;
-  line-height: 1.2;
-  text-align: left;
-  position: absolute;
-  left: 245.312px;
-  top: 6311.9px;
-  z-index: 113;
+@media only screen and (min-width: 319px) and (max-width: 575px) {
+  .container {
+    width: 306px;
+  }
+  .protection-content {
+    margin-bottom: 20px;
+  }
+  .protection-content .container .protection-sides {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .protection-content .container .protection-sides .protection-left-side {
+    text-align: center;
+  }
+  .protection-content .container .protection-sides .protection-left-side img {
+    width: 35px;
+  }
+  .protection-content .container .protection-sides .protection-left-side h4 {
+    font-size: 20px;
+  }
+  .protection-content .container .protection-sides .protection-left-side p {
+    font-size: 14px;
+    width: 295px;
+  }
+  .protection-content .container .protection-sides .protection-right-side {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .protection-content .container .protection-sides .protection-right-side img {
+    width: 35px;
+  }
+  .protection-content .container .protection-sides .protection-right-side h4 {
+    font-size: 20px;
+  }
+  .protection-content .container .protection-sides .protection-right-side p {
+    font-size: 14px;
+    width: 295px;
+  }
+  .protection-content .container .protection-phone-hack {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 50px;
+  }
+  .protection-content .container .protection-phone-hack .phone-left-side {
+    width: 260px;
+  }
+  .protection-content .container .protection-phone-hack .phone-left-side img {
+    left: -50px;
+    width: 310px;
+  }
+  .protection-content .container .protection-phone-hack .phone-right-side {
+    padding-top: 420px;
+    width: 306px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .protection-content .container .protection-phone-hack .phone-right-side h3 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .protection-content .container .protection-phone-hack .phone-right-side p {
+    text-align: center;
+    font-size: 14px;
+    width: 306px;
+  }
+  .protection-content .container .protection-phone-hack .phone-right-side .hack-buttons .button-try {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+  }
+  .protection-content .container .protection-phone-hack .phone-right-side .hack-buttons .button-try img {
+    margin-left: 20px;
+  }
+  .protection-content .container .protection-phone-hack .phone-right-side .hack-buttons .button-more {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+  }
+  .protection-content .container .horizontal-line {
+    margin-top: 50px;
+  }
+  .protection-content .container .worldmap-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 80px;
+  }
+  .protection-content .container .worldmap-content .worldmap-right-side {
+    height: 150px;
+  }
+  .protection-content .container .worldmap-content .worldmap-right-side img {
+    height: 150px;
+  }
+  .protection-content .container .worldmap-content .worldmap-left-side {
+    height: 500px;
+    transform: scale(0.6);
+    margin-top: 120px;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+  }
+  .plans-content {
+    padding-bottom: 50px;
+  }
+  .plans-content .container .plans-sides {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .plans-content .container .plans-sides .information-side {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .plans-content .container .plans-sides .information-side p {
+    font-size: 16px;
+  }
+  .plans-content .container .plans-sides .information-side h3 {
+    font-size: 20px;
+  }
+  .plans-content .container .plans-sides .information-side .info-block {
+    width: 270px;
+  }
+  .plans-content .container .plans-sides .different-plans {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 1150px;
+    margin-top: 20px;
+  }
+  .plans-content .container .plans-sides .different-plans .starter-plan {
+    width: 300px;
+  }
+  .plans-content .container .plans-sides .different-plans .pro-plan {
+    width: 300px;
+    margin-top: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  header {
+    height: 750px;
+  }
+  header .container .phone-img {
+    margin-top: 50px;
+  }
+  header .container .phone-img img {
+    width: 270px;
+  }
+  header .container nav .header-left-side a {
+    display: none;
+  }
+  header .container nav .header-center-side {
+    display: none;
+  }
+  header .container nav .header-right-side a {
+    display: none;
+  }
+  header .container h2 {
+    font-size: 22px;
+  }
+  header .container .header-small-text h6 {
+    font-size: 14px;
+  }
+  .comments-content .container .comments-photos {
+    margin-top: 0;
+  }
+  .comments-content .container .comments-photos .left-arrow {
+    width: 10px;
+    height: 20px;
+  }
+  .comments-content .container .comments-photos .right-arrow {
+    width: 10px;
+    height: 20px;
+  }
+  .comments-content .container .comments-photos .circle-photo {
+    width: 40px;
+    height: 40px;
+  }
+  .comments-content .container .comments-photos .circle-photo.main {
+    width: 60px;
+    height: 60px;
+  }
+  .comments-content .container .comments-phrase h3 {
+    font-size: 26px;
+  }
+  .comments-content .container .comments-text p {
+    font-size: 14px;
+  }
+  footer .container .subscribe-form form {
+    width: 300px;
+  }
+  footer .container .subscribe-form form input {
+    width: 150px;
+  }
+  footer .container .subscribe-form form .button-subscribe {
+    width: 110px;
+    font-size: 14px;
+  }
+  footer .container h3 {
+    font-size: 22px;
+  }
+  footer .container .help-sides {
+    height: 1000px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .container .help-sides .help-left-side {
+    margin-top: 20px;
+    text-align: center;
+  }
+  footer .container .help-sides .help-left-side .appstore-button {
+    width: 306px;
+  }
+  footer .container .help-sides .help-left-side p {
+    width: 306px;
+  }
+  footer .container .help-sides .help-left-side .social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer .container .help-sides .help-left-side .social-links a {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  footer .container .help-sides .help-right-side {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+    text-align: center;
+  }
+  footer .container .help-sides .help-right-side .contact-cols {
+    margin-top: 30px;
+  }
+  footer .container .help-sides .help-right-side .contact-cols.one {
+    margin-right: 0px;
+  }
+  footer .container .help-sides .help-right-side .contact-cols.two {
+    margin-right: 0px;
+  }
+  footer .container .help-sides .help-right-side .contact-cols.three {
+    margin-right: 0px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -251,11 +251,12 @@ h2{
     width: 100%;
     background-color: rgb(255, 255, 255);
     margin-bottom: 195px;
+    .container{
     .protection-sides{
         margin-top: 122px;
         display: flex;
-        justify-content: space-between;
 
+        justify-content: space-between;
         .protection-left-side{
             img{
                 margin-left: 2px;
@@ -427,6 +428,7 @@ h2{
             }
         }
     }
+}
 }
 .interfaces-content{
     height: 1750px;
@@ -681,9 +683,9 @@ h2{
     background-color: rgb(244, 244, 245);
     padding-bottom: 190px;
     .container{        
-        
+        .plans-sides{
         display: flex;
-        flex-direction: row;
+        
         justify-content: space-between;
         .information-side{
             margin-top: 190px;
@@ -700,7 +702,7 @@ h2{
                 width: 270px;
                 line-height: 1.4;
             }
-            p{
+            .info-block{
                 width: 360px;
                 margin-top: 72px;
             }
@@ -945,6 +947,7 @@ h2{
         }
 
 }
+}
     }
 }
 footer{
@@ -1146,7 +1149,7 @@ footer{
             }
         }
         .worldmap-content{
-            margin-top: 280px;
+            margin-top: 240px;
             .worldmap-left-side{
                 width: 400px;
             }
@@ -1162,7 +1165,7 @@ footer{
 }
 @media only screen and (min-width:1152px) and (max-width:1365px){
     .container ,nav{
-        width: 960px;
+        width: 1050px;
     }
     .protection-content{
         .container{
@@ -1190,9 +1193,9 @@ footer{
                 padding-top: 80px;
             }
         }
-    }
+    
     .worldmap-content{
-        margin-top: 280px;
+        margin-top: 180px;
         .worldmap-left-side{
             width: 400px;
         }
@@ -1204,11 +1207,13 @@ footer{
         }
     }
 }
+}
     .plans-content{
         .container{
+            .plans-sides{
         .information-side{
             .info-block{
-                width: 300px;
+                width: 280px;
             }
         }
         .different-plans{
@@ -1228,16 +1233,168 @@ footer{
             }
         }
     }
+}
     }
 }
 @media only screen and (min-width:992px) and (max-width:1151px){
     .container{
-        width: 720px;
+        width: 960px;
     }
+    .protection-content{
+        .container{
+            .protection-sides{
+                flex-wrap: wrap;
+                justify-content: center;
+                .protection-right-side{
+                    margin-top: 30px;
+                }
+            }
+            .protection-phone-hack{
+                .phone-left-side{
+                    width: 510px;
+                    img{
+                        left: -90px;
+                        width: 600px;
+                    }
+                }
+                .phone-right-side{
+                    padding-top: 80px;
+                }
+            }
+            .worldmap-content{
+                margin-top: 170px;
+                .worldmap-right-side{
+                    height: 300px;
+                    img{
+                        height: 300px;
+                    }
+                }
+            }
+        }
+        
+    }
+    .plans-content{
+        .container{
+            .plans-sides{
+        .information-side{
+            .info-block{
+                width: 270px;
+            }
+        }
+        .different-plans{
+            .starter-plan{
+                width: 250px;
+                height: 510px;
+                .plan-button{
+                    margin-top: 63px;
+                }
+            }
+            .pro-plan{
+                width: 250px;
+                height: 470px;
+                .plan-button{
+                    margin-top: 20px;
+                }
+            }
+        } 
+    }
+    }
+    }
+
 }
 @media only screen and (min-width:768px) and (max-width:991px){
     .container{
-        width: 540px;
+        width: 720px;
+    }
+    .protection-content{
+        .container{
+            .protection-sides{
+                flex-wrap: wrap;
+                justify-content: center;
+                .protection-right-side{
+                    margin-top: 30px;
+                }
+            }
+            .protection-phone-hack{
+                justify-content: flex-end;
+                flex-wrap: wrap;
+                .phone-left-side{
+                    
+                    width: 680px;
+                    img{
+                        left: -90px;
+                        width: 680px;
+                    }
+                }
+                .phone-right-side{
+                    
+                    padding-top: 650px;
+                }
+            }
+        
+        .worldmap-content{
+            margin-top: 150px;
+            .worldmap-right-side{
+                height: 370px;
+                img{
+                    height: 370px;
+                }
+            }
+            .worldmap-left-side{
+                margin-top: 480px;
+            }
+        }
+    }
+    }
+    .plans-content{
+        .container{
+            .plans-sides{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        }
+        
+    }
+    header{
+        .container{
+            nav{
+                .header-left-side{
+                    a{
+                        display: none;
+                    }
+                }
+                .header-center-side{
+                    display: none;
+                }
+                .header-right-side{
+                    a{
+                        display: none;
+                    }
+                }
+            }
+            h2{
+                font-size: 54px;
+            }
+        }
+    }
+    footer{
+        .container{
+            .help-sides{
+                .help-right-side{
+                    .contact-cols{
+                        &.one{
+                            margin-right: 30px;
+                        }
+                        &.two{
+                            margin-right: 30px;
+                        }
+                        &.three{
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 @media only screen and (min-width:576px) and (max-width:767px){
@@ -1245,7 +1402,7 @@ footer{
         width: 490px;
     }
 }
-@media only screen and (min-width:320px) and (max-width:577px){
+@media only screen and (min-width:320px) and (max-width:575px){
     .container{
         width: 290px;
     }

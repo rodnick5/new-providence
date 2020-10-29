@@ -33,7 +33,9 @@ indiv.onclick = function(){
       }
     }
     function navScroll() {
-        let scrolled = window.pageYOffset;
+        let width = document.documentElement.clientWidth;
+        if (width > 1200){
+           let scrolled = window.pageYOffset;
         if( scrolled > 90){
             nav.classList.add('scrolled-menu-nav');
             nav.style.justifyContent = 'space-around'; 
@@ -41,8 +43,10 @@ indiv.onclick = function(){
         if(scrolled < 90){
             nav.classList.remove('scrolled-menu-nav');
             nav.style.justifyContent = 'space-between';
+        } 
         }
-        }
+    }
+
     var goTopBtn = document.querySelector('.back_to_top');
     let nav = document.getElementById('navigation');
     window.addEventListener('scroll', trackScroll);

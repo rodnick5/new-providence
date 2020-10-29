@@ -1563,7 +1563,11 @@ footer .container .more-content h5 span {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .protection-content .container .protection-sides .protection-left-side {
+    text-align: center;
+  }
   .protection-content .container .protection-sides .protection-right-side {
+    text-align: center;
     margin-top: 30px;
   }
   .protection-content .container .protection-phone-hack .phone-left-side {
@@ -1615,7 +1619,11 @@ footer .container .more-content h5 span {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .protection-content .container .protection-sides .protection-left-side {
+    text-align: center;
+  }
   .protection-content .container .protection-sides .protection-right-side {
+    text-align: center;
     margin-top: 30px;
   }
   .protection-content .container .protection-phone-hack {
@@ -1725,10 +1733,14 @@ footer .container .more-content h5 span {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .protection-content .container .protection-sides .protection-left-side {
+    text-align: center;
+  }
   .protection-content .container .protection-sides .protection-left-side p {
     width: 400px;
   }
   .protection-content .container .protection-sides .protection-right-side {
+    text-align: center;
     margin-top: 30px;
   }
   .protection-content .container .protection-sides .protection-right-side p {

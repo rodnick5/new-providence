@@ -1244,7 +1244,11 @@ footer{
             .protection-sides{
                 flex-wrap: wrap;
                 justify-content: center;
+                .protection-left-side{
+                    text-align: center;
+                }
                 .protection-right-side{
+                    text-align: center;
                     margin-top: 30px;
                 }
             }
@@ -1310,7 +1314,11 @@ footer{
             .protection-sides{
                 flex-wrap: wrap;
                 justify-content: center;
+                .protection-left-side{
+                    text-align: center;
+                }
                 .protection-right-side{
+                    text-align: center;
                     margin-top: 30px;
                 }
             }
@@ -1447,13 +1455,14 @@ footer{
                 flex-wrap: wrap;
                 justify-content: center;
                 .protection-left-side{
-                
+                    text-align: center;
                     p{
                         width: 400px;
                     }
                     
                 }
                 .protection-right-side{
+                    text-align: center;
                     p{
                     width: 400px;
                     }

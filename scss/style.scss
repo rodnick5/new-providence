@@ -95,7 +95,7 @@ header{
         display: flex;
         flex-direction: row;
         align-items: center;
-        z-index: 999;
+        z-index: 3000;
         transition: all 0.5s;
         justify-content: space-between;
         -webkit-transition: all 0.5s;
@@ -603,6 +603,121 @@ h2{
 .comments-content{
     width:100%;
     background-color: rgb(255, 255, 255);
+    .container{
+        .slider-img{
+                position: relative;
+                .slider-item{
+                    text-align: center;
+                    transition: all 0.5s;
+                }
+            .slider-item img{
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+            }
+            
+            .slick-list {
+                overflow: hidden;
+            }
+            /* Лента слайдов */
+            .slick-track{
+                display: flex;
+                align-items: center;
+                height: 250px;
+            }
+
+
+            /* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{
+    outline: none;
+}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center img {
+    width: 130px;
+    height: 130px;
+    transition: all 0.5s;
+                    -webkit-box-shadow: 20px 31px 40px -2px rgba(0,0,0,0.2);
+                -moz-box-shadow: 20px 31px 40px -2px rgba(0,0,0,0.2);
+                box-shadow: 20px 31px 40px -2px rgba(0,0,0,0.2);
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+
+
+/* Стрелка */
+.slick-arrow{
+    position: absolute;
+    z-index: 50;
+    outline: none;
+    font-size: 0;
+    margin-top: -20px;
+    width: 22px;
+    height: 40px;
+    top: 50%;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+    left: 0;
+    border: none;
+    background: url('../img/Arrowleft.png') 0 0 / 100% no-repeat ;
+
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+    right: 0;
+    background: url('../img/Arrowrright.png') 0 0 / 100% no-repeat;
+    border: none;
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+        }
+
+        .slider-text{
+            position: relative;
+            .slider-text-item{
+                text-align: center;
+                transition: all 0.3s;
+                -webkit-transition: all 0.3s;
+                -moz-transition: all 0.3s;
+                -ms-transition: all 0.3s;
+                -o-transition: all 0.3s;
+}
+
+        
+        .slick-list {
+            overflow: hidden;
+        }
+        /* Лента слайдов */
+        .slick-track{
+            display: flex;
+            align-items: center;
+        }
+
+
+        /* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{
+outline: none;
+}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+
+
+/* Стрелка влево */
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+    }
+    
     .comments-phrase{
         width:100%;
         padding-top: 74px;
@@ -632,35 +747,7 @@ h2{
             width:568px;
         }
     }
-    .comments-photos{
-        width:100%;
-        margin-top: 132px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
 
-            .left-arrow{
-            height: 42px;
-            }
-            .right-arrow{
-            height: 42px;
-            }
-        .circle-photo{
-            border-radius: 50%;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -ms-border-radius: 50%;
-            -o-border-radius: 50%;
-            height: 90px;
-
-            &.main{
-                height: 130px;
-                -webkit-box-shadow: 20px 31px 40px -2px rgba(0,0,0,0.2);
-                -moz-box-shadow: 20px 31px 40px -2px rgba(0,0,0,0.2);
-                box-shadow: 20px 31px 40px -2px rgba(0,0,0,0.2);
-            }
-        }
-    }
     .comments-rate{
         width:100%;
         text-align: center;
@@ -676,7 +763,7 @@ h2{
             margin-bottom: 0px;
         }
     }
-
+}
 }
 .plans-content{
     background-color: rgb(244, 244, 245);

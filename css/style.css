@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   overflow-x: hidden;
 }
@@ -116,7 +117,7 @@ header .container nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 999;
+  z-index: 3000;
   transition: all 0.5s;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -766,13 +767,127 @@ header .container .phone-img {
   background-color: white;
 }
 
-.comments-content .comments-phrase {
+.comments-content .container .slider-img {
+  position: relative;
+  /* Лента слайдов */
+  /* Слайд */
+  /* Слайд активный (показывается) */
+  /* Слайд основной */
+  /* Слайд по центру */
+  /* Клонированный слайд */
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка вправо */
+  /* Стрелка не активная */
+}
+
+.comments-content .container .slider-img .slider-item {
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.comments-content .container .slider-img .slider-item img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.comments-content .container .slider-img .slick-list {
+  overflow: hidden;
+}
+
+.comments-content .container .slider-img .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 250px;
+}
+
+.comments-content .container .slider-img .slick-slide.slick-active {
+  outline: none;
+}
+
+.comments-content .container .slider-img .slick-slide.slick-center img {
+  width: 130px;
+  height: 130px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-box-shadow: 20px 31px 40px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 20px 31px 40px -2px rgba(0, 0, 0, 0.2);
+}
+
+.comments-content .container .slider-img .slick-arrow {
+  position: absolute;
+  z-index: 50;
+  outline: none;
+  font-size: 0;
+  margin-top: -20px;
+  width: 22px;
+  height: 40px;
+  top: 50%;
+}
+
+.comments-content .container .slider-img .slick-arrow.slick-prev {
+  left: 0;
+  border: none;
+  background: url("../img/Arrowleft.png") 0 0/100% no-repeat;
+}
+
+.comments-content .container .slider-img .slick-arrow.slick-next {
+  right: 0;
+  background: url("../img/Arrowrright.png") 0 0/100% no-repeat;
+  border: none;
+}
+
+.comments-content .container .slider-text {
+  position: relative;
+  /* Лента слайдов */
+  /* Слайд */
+  /* Слайд активный (показывается) */
+  /* Слайд основной */
+  /* Слайд по центру */
+  /* Клонированный слайд */
+  /* Стрелка влево */
+  /* Стрелка не активная */
+}
+
+.comments-content .container .slider-text .slider-text-item {
+  text-align: center;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.comments-content .container .slider-text .slick-list {
+  overflow: hidden;
+}
+
+.comments-content .container .slider-text .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comments-content .container .slider-text .slick-slide.slick-active {
+  outline: none;
+}
+
+.comments-content .container .comments-phrase {
   width: 100%;
   padding-top: 74px;
   text-align: center;
 }
 
-.comments-content .comments-phrase h3 {
+.comments-content .container .comments-phrase h3 {
   font-size: 32px;
   font-family: "Lato";
   font-weight: 300;
@@ -781,7 +896,7 @@ header .container .phone-img {
   line-height: 1.188;
 }
 
-.comments-content .comments-text {
+.comments-content .container .comments-text {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -792,7 +907,7 @@ header .container .phone-img {
   padding-top: 44px;
 }
 
-.comments-content .comments-text p {
+.comments-content .container .comments-text p {
   font-size: 20px;
   font-weight: 400;
   font-family: "Lato";
@@ -803,51 +918,14 @@ header .container .phone-img {
   width: 568px;
 }
 
-.comments-content .comments-photos {
-  width: 100%;
-  margin-top: 132px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.comments-content .comments-photos .left-arrow {
-  height: 42px;
-}
-
-.comments-content .comments-photos .right-arrow {
-  height: 42px;
-}
-
-.comments-content .comments-photos .circle-photo {
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  height: 90px;
-}
-
-.comments-content .comments-photos .circle-photo.main {
-  height: 130px;
-  -webkit-box-shadow: 20px 31px 40px -2px rgba(0, 0, 0, 0.2);
-  box-shadow: 20px 31px 40px -2px rgba(0, 0, 0, 0.2);
-}
-
-.comments-content .comments-rate {
+.comments-content .container .comments-rate {
   width: 100%;
   text-align: center;
   padding-top: 30px;
   margin-bottom: 128px;
 }
 
-.comments-content .comments-rate p {
+.comments-content .container .comments-rate p {
   font-size: 12px;
   font-family: "Lato";
   color: #26272d;

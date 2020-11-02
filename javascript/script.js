@@ -66,3 +66,92 @@ for ( let anchor of anchors){
         })
     })
 }
+var expire = new Date();
+expire.setHours(expire.getHours() + 4);
+ 
+document.cookie = "city=Berlin;expires="+expire.toUTCString()+";";
+document.cookie = "country=Germany;expires="+expire.toUTCString()+";";
+document.cookie = "login=tom32;";
+ 
+document.write(document.cookie);
+var cookies = document.cookie.split(";");
+for(var i=0; i<cookies.length; i++){
+ 
+    var parts = cookies[i].split("="),
+        name = parts[0], 
+        value = parts[1];
+    document.write("Имя куки: " + name + "<br/>");
+    document.write("Значение: " + value + "<br/><br/>");
+}
+
+// const animItems = document.querySelectorAll('.box');
+// if(animItems.length > 0){
+// window.addEventListener('scroll' , animOnScroll);
+//     function animOnScroll(){
+//         console.log('scroll');
+//         for( let i = 0; i < animItems.length; i++){
+//             const animItem = animItems[i];
+//             const animItemHeight = animItem.offsetHeight;
+//             const animItemOffset = offset(animItem).top;
+//             const animStart = 4;
+
+//             let animItemPoint  = window.innerHeight - animItemHeight / animStart;
+//             if(animItemHeight > window.innerHeight){
+//                 animItemPoint = window.innerHeight - window.innerHeight / animStart;
+//             }
+//             if((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)){
+//                 animItem.classList.add('active-item');
+//             } else {
+//                 animItem.classList.remove('active-item');
+//             }
+//         }
+//     }
+//     function offset(el){
+//         const rect = el.getBoundingClientRect();
+//         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//         return{ top: rect.top + scrollTop}
+//     }
+    
+// }
+$(document).ready(function(){
+    $('.slider-img').slick({
+        centerMode:true,
+        infinite: false,
+        slidesToShow: 3,
+        speed: 1000,
+        
+        asNavFor:'.slider-text',
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '20px',
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 578,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+          ]
+    });
+
+
+    $('.slider-text').slick({
+        arrows:false,
+        slidesToShow:1,
+        centerMode: true,
+        fade:true,
+        infinite:false,
+        asNavFor:'.slider-img',
+    });
+    $('.slider-img').slick('goTo', 2);
+    $('.slider-text').slick('goTo', 2);
+});

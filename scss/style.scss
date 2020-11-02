@@ -606,24 +606,37 @@ h2{
     .container{
         .slider-img{
                 position: relative;
+
                 .slider-item{
                     text-align: center;
-                    transition: all 0.5s;
+                    outline: none;
+                    
                 }
             .slider-item img{
+                user-select: none;
+                opacity: 0.3;
                 width: 90px;
                 height: 90px;
                 border-radius: 50%;
-            }
+                transition:  all .5s;
+                -webkit-transition:  all .5s;
+                -moz-transition:  all .5s;
+                -ms-transition:  all .5s;
+                -o-transition:  all .5s;
+}
             
             .slick-list {
                 overflow: hidden;
+
+            
             }
             /* Лента слайдов */
             .slick-track{
                 display: flex;
+                justify-content: center;
                 align-items: center;
                 height: 250px;
+                
             }
 
 
@@ -633,16 +646,22 @@ h2{
 .slick-slide.slick-active{
     outline: none;
 }
+
 /* Слайд основной */
 .slick-slide.slick-current{}
 /* Слайд по центру */
 .slick-slide.slick-center img {
     width: 130px;
     height: 130px;
+    opacity: 1;
     transition: all 0.5s;
-                    -webkit-box-shadow: 20px 31px 40px -2px rgba(0,0,0,0.2);
-                -moz-box-shadow: 20px 31px 40px -2px rgba(0,0,0,0.2);
-                box-shadow: 20px 31px 40px -2px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 20px 31px 40px -2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 20px 31px 40px -2px rgba(0,0,0,0.2);
+    box-shadow: 20px 31px 40px -2px rgba(0,0,0,0.2);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
 }
 /* Клонированный слайд */
 .slick-slide.slick-cloned{}
@@ -673,7 +692,9 @@ h2{
     border: none;
 }
 /* Стрелка не активная */
-.slick-arrow.slick-disabled{}
+.slick-arrow.slick-disabled{
+    opacity: 0.3;
+}
         }
 
         .slider-text{
@@ -1497,20 +1518,7 @@ footer{
             }
         }
     }
-    .comments-content{
-        .container{
-            .comments-photos{
-                img{
-                    transform: scale(0.8);
-                -webkit-transform: scale(0.8);
-                -moz-transform: scale(0.8);
-                -ms-transform: scale(0.8);
-                -o-transform: scale(0.8); 
-                }
-               
-}
-        }
-    }
+    
     footer{
         .container{
             .help-sides{
@@ -1665,16 +1673,18 @@ footer{
     }
     .comments-content{
         .container{
-            .comments-photos{
-                img{
-                    transform: scale(0.6);
-                    -webkit-transform: scale(0.6);
-                    -moz-transform: scale(0.6);
-                    -ms-transform: scale(0.6);
-                    -o-transform: scale(0.6);
-}
-               
-}
+            .slider-img{
+                .slider-item{
+                    img{
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+                .slick-slide.slick-center img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
         }
     }
     footer{
@@ -1912,27 +1922,21 @@ footer{
     }
     .comments-content{
         .container{
-            .comments-photos{
-                margin-top: 0;
-                
-                    .left-arrow{
-                        width: 10px;
-                        height: 20px;
-                    }
-                    .right-arrow{
-                        width: 10px;
-                        height: 20px;
-                    }
-                    .circle-photo{
-                        width: 40px;
-                        height: 40px;
-                        &.main{
-                            width:60px;
-                            height: 60px;
+                    .slider-img{
+                        .slider-item{
+                            img{
+                                width: 60px;
+                                height: 60px;
+                            }
+                        }
+                        .slick-slide.slick-center img {
+                            width: 100px;
+                            height: 100px;
                         }
                     }
-            }
-            .comments-phrase{
+                    .slider-text{
+                        .slider-text-item{
+                            .comments-phrase{
                 h3{
                    font-size: 26px; 
                 }
@@ -1943,6 +1947,10 @@ footer{
                     font-size: 14px;
                 }
             }
+                        }
+                        
+                    }
+            
         }
     }
     footer{

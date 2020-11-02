@@ -117,7 +117,10 @@ $(document).ready(function(){
     $('.slider-img').slick({
         centerMode:true,
         infinite: false,
+        draggable: false,
         slidesToShow: 3,
+        initialSlide: 2,
+
         speed: 1000,
         
         asNavFor:'.slider-text',
@@ -147,11 +150,13 @@ $(document).ready(function(){
     $('.slider-text').slick({
         arrows:false,
         slidesToShow:1,
+        draggable:false,
+        swipe:false,
         centerMode: true,
         fade:true,
+        initialSlide: 2,
         infinite:false,
         asNavFor:'.slider-img',
     });
-    $('.slider-img').slick('goTo', 2);
-    $('.slider-text').slick('goTo', 2);
+
 });

@@ -114,6 +114,13 @@ for(var i=0; i<cookies.length; i++){
     
 // }
 $(document).ready(function(){
+    $('.slider-screens').slick({
+        focusOnSelect: true,
+        centerMode:true,
+        slidesToShow: 3,
+        centerPadding: '220px',
+        arrows: false,
+    });
     $('.slider-img').slick({
         centerMode:true,
         infinite: false,

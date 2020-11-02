@@ -120,6 +120,41 @@ $(document).ready(function(){
         slidesToShow: 3,
         centerPadding: '220px',
         arrows: false,
+        responsive: [
+            {
+              breakpoint: 1599,
+              settings: {
+                centerPadding: '156px',
+              }
+            },
+            {
+                breakpoint: 1439,
+                settings: {
+                  centerPadding: '116px',
+                }
+              },
+              {
+                breakpoint: 1365,
+                settings: {
+                  centerPadding: '90px',
+                }
+              },
+              {
+                breakpoint: 1279,
+                settings: {
+                  centerPadding: '20px',
+
+                }
+              },
+              {
+                breakpoint: 1151,
+                settings: {
+                    slidesToShow: 1,
+                  centerPadding: '0px',
+
+                }
+              }
+        ]
     });
     $('.slider-img').slick({
         centerMode:true,
@@ -127,25 +162,21 @@ $(document).ready(function(){
         draggable: false,
         slidesToShow: 3,
         initialSlide: 2,
-
         speed: 1000,
-        
         asNavFor:'.slider-text',
         responsive: [
             {
-              breakpoint: 768,
+              breakpoint: 769,
               settings: {
                 arrows: false,
-                centerMode: true,
                 centerPadding: '20px',
-                slidesToShow: 3
+                focusOnSelect: true,
               }
             },
             {
               breakpoint: 578,
               settings: {
                 arrows: false,
-                centerMode: true,
                 centerPadding: '40px',
                 slidesToShow: 1
               }

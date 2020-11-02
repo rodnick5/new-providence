@@ -551,19 +551,16 @@ header .container .phone-img {
 
 .interfaces-content .main-screen-phone {
   position: absolute;
+  margin-top: 50px;
   left: 50%;
   margin-left: -250px;
 }
 
 .interfaces-content .slider-screens {
-  margin-top: 88px;
+  margin-top: 72px;
+  height: 700px;
   position: relative;
   /* Лента слайдов */
-  /* Слайд */
-  /* Слайд активный (показывается) */
-  /* Слайд основной */
-  /* Слайд по центру */
-  /* Клонированный слайд */
 }
 
 .interfaces-content .slider-screens .slider-screens-item img {
@@ -574,10 +571,20 @@ header .container .phone-img {
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
+  -webkit-box-shadow: 0px 18px 40px 3px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 18px 40px 3px rgba(0, 0, 0, 0.28);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 
 .interfaces-content .slider-screens .slider-screens-item {
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   outline: none;
 }
 
@@ -590,6 +597,7 @@ header .container .phone-img {
 
 .interfaces-content .slider-screens .slick-list {
   overflow: hidden;
+  height: 700px;
 }
 
 .interfaces-content .slider-screens .slick-track {
@@ -599,6 +607,7 @@ header .container .phone-img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 700px;
 }
 
 .interfaces-content .slider-screens .slick-slide.slick-active {
@@ -608,10 +617,13 @@ header .container .phone-img {
 .interfaces-content .slider-screens .slick-slide.slick-center img {
   margin-right: 2px;
   width: 320px;
+  transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .interfaces-content .container .interfaces-texts {
@@ -661,7 +673,7 @@ header .container .phone-img {
 
 .interfaces-content .container .form-content {
   width: 100%;
-  padding-top: 198px;
+  padding-top: 210px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1889,6 +1901,29 @@ footer .container .more-content h5 span {
   .protection-content .container .worldmap-content .worldmap-left-side h3 {
     text-align: center;
   }
+  .interfaces-content .container .interfaces-texts h3 {
+    font-size: 28px;
+  }
+  .interfaces-content .main-screen-phone {
+    width: 300px;
+    margin-left: -150px;
+  }
+  .interfaces-content .main-screen-phone img {
+    width: 300px;
+  }
+  .interfaces-content .slider-screens {
+    height: 500px;
+  }
+  .interfaces-content .slider-screens .slick-track {
+    height: 402px;
+  }
+  .interfaces-content .slider-screens .slider-screens-item img {
+    width: 192px !important;
+    height: 340px;
+  }
+  .interfaces-content .slider-screens .slick-slide.slick-center img {
+    margin: 0;
+  }
   .plans-content {
     padding-bottom: 50px;
   }
@@ -2107,6 +2142,29 @@ footer .container .more-content h5 span {
     -moz-transform: scale(0.6);
     -ms-transform: scale(0.6);
     -o-transform: scale(0.6);
+  }
+  .interfaces-content .container .interfaces-texts h3 {
+    font-size: 28px;
+  }
+  .interfaces-content .main-screen-phone {
+    width: 300px;
+    margin-left: -150px;
+  }
+  .interfaces-content .main-screen-phone img {
+    width: 300px;
+  }
+  .interfaces-content .slider-screens {
+    height: 500px;
+  }
+  .interfaces-content .slider-screens .slick-track {
+    height: 402px;
+  }
+  .interfaces-content .slider-screens .slider-screens-item img {
+    width: 192px !important;
+    height: 340px;
+  }
+  .interfaces-content .slider-screens .slick-slide.slick-center img {
+    margin: 0;
   }
   .plans-content {
     padding-bottom: 50px;

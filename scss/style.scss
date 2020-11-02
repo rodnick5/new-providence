@@ -435,23 +435,33 @@ h2{
     background-color: rgb(245, 245, 248);
     .main-screen-phone{
         position: absolute;
+        margin-top: 50px;
         left: 50%;
         margin-left: -250px;
 }
 .slider-screens{
-    margin-top: 88px;
+    margin-top: 72px;
+    height: 700px;
     position: relative;
     .slider-screens-item img{
-        border-radius: 2px;
-        width: 320px;
-        height: 568px;
-        -webkit-border-radius: 2px;
-        -moz-border-radius: 2px;
-        -ms-border-radius: 2px;
-        -o-border-radius: 2px;
+  border-radius: 2px;
+  width: 320px;
+  height: 568px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  -webkit-box-shadow: 0px 18px 40px 3px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 18px 40px 3px rgba(0, 0, 0, 0.28);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
     .slider-screens-item{
         text-align: center;
+        align-items: center;
         outline: none;
         
     }
@@ -461,6 +471,7 @@ h2{
 
 .slick-list {
     overflow: hidden;
+    height: 700px;
 
 
 }
@@ -468,30 +479,23 @@ h2{
 .slick-track{
     display: flex;
     align-items: center;
+    height: 700px;
     
 }
 
-
-/* Слайд */
-.slick-slide{}
-/* Слайд активный (показывается) */
 .slick-slide.slick-active{
 outline: none;
 }
-
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
 .slick-slide.slick-center img {
     margin-right: 2px;
     width: 320px;
--webkit-transition: all 0.5s;
--moz-transition: all 0.5s;
--ms-transition: all 0.5s;
--o-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    box-shadow: none;
 }
-/* Клонированный слайд */
-.slick-slide.slick-cloned{}
 }
     .container{
     .interfaces-texts{
@@ -530,7 +534,7 @@ outline: none;
     
     .form-content{
         width: 100%;
-        padding-top: 198px;
+        padding-top: 210px;
         display: flex;
         flex-direction: column;
         .form-texts{
@@ -1619,6 +1623,37 @@ footer{
         }
     }
     }
+    .interfaces-content{
+        .container{
+            .interfaces-texts{
+                h3{
+                    font-size: 28px;
+                }
+            }
+        }
+        .main-screen-phone{
+            width: 300px;
+            margin-left: -150px;
+            img{
+                width: 300px;
+            }
+        }
+        .slider-screens{
+            height: 500px;
+            .slick-track{
+
+                height: 402px;
+                
+            }
+            .slider-screens-item img{
+          width: 192px !important;
+          height: 340px;
+            }
+            .slick-slide.slick-center img{
+                margin: 0;
+            }
+        }
+    }
     .plans-content{
         padding-bottom: 50px;
         .container{
@@ -1852,6 +1887,37 @@ footer{
 }
         }
     }
+    }
+    .interfaces-content{
+        .container{
+            .interfaces-texts{
+                h3{
+                    font-size: 28px;
+                }
+            }
+        }
+        .main-screen-phone{
+            width: 300px;
+            margin-left: -150px;
+            img{
+                width: 300px;
+            }
+        }
+        .slider-screens{
+            height: 500px;
+            .slick-track{
+
+                height: 402px;
+                
+            }
+            .slider-screens-item img{
+          width: 192px !important;
+          height: 340px;
+            }
+            .slick-slide.slick-center img{
+                margin: 0;
+            }
+        }
     }
     .plans-content{
         padding-bottom: 50px;

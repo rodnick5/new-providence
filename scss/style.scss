@@ -432,7 +432,7 @@ h2{
 .interfaces-content{
     height: 1750px;
     width: 100vw;
-    background-color: rgb(245, 245, 248);
+    background-color: rgb(233, 231, 231);
     .main-screen-phone{
         position: absolute;
         margin-top: 50px;
@@ -487,7 +487,7 @@ h2{
 outline: none;
 }
 .slick-slide.slick-center img {
-    margin-right: 2px;
+    margin-right: 1px;
     width: 320px;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
@@ -625,6 +625,7 @@ outline: none;
 .comments-content{
     width:100%;
     background-color: rgb(255, 255, 255);
+
     .container{
         .slider-img{
                 position: relative;
@@ -1624,13 +1625,53 @@ footer{
     }
     }
     .interfaces-content{
+        height: 1350px;
         .container{
             .interfaces-texts{
+                padding-top: 100px;
                 h3{
                     font-size: 28px;
                 }
+                p{
+                    font-size: 8px;
+                }
+            }
+            .form-content{
+                padding-top: 50px;
+                .form-texts{
+                    p{
+                    font-size:8px;
+                    }
+                    h3{
+                        font-size: 22px;
+                    }
+                }
+            
+            .form-wrapper{
+                form{
+                    width: 350px;
+                    input{
+                        width: 180px;
+                        margin-right: 8px;
+                    }
+                    .button-email{
+                        width: 130px;
+                        font-size: 14px;
+                        img{
+                            margin-right: 4px;
+                        }
+                }
+            }
+            .appstore-download{
+                p{
+                    font-size: 8px;
+                }
+                img{
+                    width: 160px;
+                }
             }
         }
+    }}
         .main-screen-phone{
             width: 300px;
             margin-left: -150px;
@@ -1640,14 +1681,17 @@ footer{
         }
         .slider-screens{
             height: 500px;
+            .slick-list{
+                height: 402px;
+            }
             .slick-track{
-
+            
                 height: 402px;
                 
             }
             .slider-screens-item img{
           width: 192px !important;
-          height: 340px;
+          height: 342px !important;
             }
             .slick-slide.slick-center img{
                 margin: 0;
@@ -1774,7 +1818,6 @@ footer{
             }
         }
     }
-
 }
 @media only screen and (min-width:319px) and (max-width:575px){
     .container{
@@ -1889,35 +1932,80 @@ footer{
     }
     }
     .interfaces-content{
+        height: 1350px;
         .container{
             .interfaces-texts{
+                padding-top: 100px;
                 h3{
                     font-size: 28px;
                 }
+                p{
+                    font-size: 8px;
+                }
+            }
+            .form-content{
+                padding-top: 50px;
+                .form-texts{
+                    p{
+                    font-size:8px;
+                    }
+                    h3{
+                        font-size: 22px;
+                    }
+                }
+            
+            .form-wrapper{
+                form{
+                    width: 294px;
+                    input{
+                        width: 126px;
+                        margin-right: 8px;
+                    }
+                    .button-email{
+                        width: 130px;
+                        font-size: 14px;
+                        img{
+                            margin-right: 12px;
+                            margin-left: 8px;
+                        }
+                }
+            }
+            .appstore-download{
+                p{
+                    font-size: 8px;
+                }
+                img{
+                    width: 160px;
+                }
             }
         }
-        .main-screen-phone{
+    }
+}
+    .main-screen-phone{
+        width: 300px;
+        margin-left: -150px;
+        img{
             width: 300px;
-            margin-left: -150px;
-            img{
-                width: 300px;
-            }
         }
-        .slider-screens{
-            height: 500px;
-            .slick-track{
-
-                height: 402px;
-                
-            }
-            .slider-screens-item img{
-          width: 192px !important;
-          height: 340px;
-            }
-            .slick-slide.slick-center img{
-                margin: 0;
-            }
+    }
+    .slider-screens{
+        height: 500px;
+        .slick-list{
+            height: 402px;
         }
+        .slick-track{
+        
+            height: 402px;
+            
+        }
+        .slider-screens-item img{
+      width: 192px !important;
+      height: 342px !important;
+        }
+        .slick-slide.slick-center img{
+            margin: 0;
+        }
+    }
     }
     .plans-content{
         padding-bottom: 50px;

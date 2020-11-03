@@ -546,7 +546,7 @@ header .container .phone-img {
 .interfaces-content {
   height: 1750px;
   width: 100vw;
-  background-color: #f5f5f8;
+  background-color: #e9e7e7;
 }
 
 .interfaces-content .main-screen-phone {
@@ -615,7 +615,7 @@ header .container .phone-img {
 }
 
 .interfaces-content .slider-screens .slick-slide.slick-center img {
-  margin-right: 2px;
+  margin-right: 1px;
   width: 320px;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -1901,8 +1901,46 @@ footer .container .more-content h5 span {
   .protection-content .container .worldmap-content .worldmap-left-side h3 {
     text-align: center;
   }
+  .interfaces-content {
+    height: 1350px;
+  }
+  .interfaces-content .container .interfaces-texts {
+    padding-top: 100px;
+  }
   .interfaces-content .container .interfaces-texts h3 {
     font-size: 28px;
+  }
+  .interfaces-content .container .interfaces-texts p {
+    font-size: 8px;
+  }
+  .interfaces-content .container .form-content {
+    padding-top: 50px;
+  }
+  .interfaces-content .container .form-content .form-texts p {
+    font-size: 8px;
+  }
+  .interfaces-content .container .form-content .form-texts h3 {
+    font-size: 22px;
+  }
+  .interfaces-content .container .form-content .form-wrapper form {
+    width: 350px;
+  }
+  .interfaces-content .container .form-content .form-wrapper form input {
+    width: 180px;
+    margin-right: 8px;
+  }
+  .interfaces-content .container .form-content .form-wrapper form .button-email {
+    width: 130px;
+    font-size: 14px;
+  }
+  .interfaces-content .container .form-content .form-wrapper form .button-email img {
+    margin-right: 4px;
+  }
+  .interfaces-content .container .form-content .form-wrapper .appstore-download p {
+    font-size: 8px;
+  }
+  .interfaces-content .container .form-content .form-wrapper .appstore-download img {
+    width: 160px;
   }
   .interfaces-content .main-screen-phone {
     width: 300px;
@@ -1914,12 +1952,15 @@ footer .container .more-content h5 span {
   .interfaces-content .slider-screens {
     height: 500px;
   }
+  .interfaces-content .slider-screens .slick-list {
+    height: 402px;
+  }
   .interfaces-content .slider-screens .slick-track {
     height: 402px;
   }
   .interfaces-content .slider-screens .slider-screens-item img {
     width: 192px !important;
-    height: 340px;
+    height: 342px !important;
   }
   .interfaces-content .slider-screens .slick-slide.slick-center img {
     margin: 0;
@@ -2143,8 +2184,47 @@ footer .container .more-content h5 span {
     -ms-transform: scale(0.6);
     -o-transform: scale(0.6);
   }
+  .interfaces-content {
+    height: 1350px;
+  }
+  .interfaces-content .container .interfaces-texts {
+    padding-top: 100px;
+  }
   .interfaces-content .container .interfaces-texts h3 {
     font-size: 28px;
+  }
+  .interfaces-content .container .interfaces-texts p {
+    font-size: 8px;
+  }
+  .interfaces-content .container .form-content {
+    padding-top: 50px;
+  }
+  .interfaces-content .container .form-content .form-texts p {
+    font-size: 8px;
+  }
+  .interfaces-content .container .form-content .form-texts h3 {
+    font-size: 22px;
+  }
+  .interfaces-content .container .form-content .form-wrapper form {
+    width: 294px;
+  }
+  .interfaces-content .container .form-content .form-wrapper form input {
+    width: 126px;
+    margin-right: 8px;
+  }
+  .interfaces-content .container .form-content .form-wrapper form .button-email {
+    width: 130px;
+    font-size: 14px;
+  }
+  .interfaces-content .container .form-content .form-wrapper form .button-email img {
+    margin-right: 12px;
+    margin-left: 8px;
+  }
+  .interfaces-content .container .form-content .form-wrapper .appstore-download p {
+    font-size: 8px;
+  }
+  .interfaces-content .container .form-content .form-wrapper .appstore-download img {
+    width: 160px;
   }
   .interfaces-content .main-screen-phone {
     width: 300px;
@@ -2156,12 +2236,15 @@ footer .container .more-content h5 span {
   .interfaces-content .slider-screens {
     height: 500px;
   }
+  .interfaces-content .slider-screens .slick-list {
+    height: 402px;
+  }
   .interfaces-content .slider-screens .slick-track {
     height: 402px;
   }
   .interfaces-content .slider-screens .slider-screens-item img {
     width: 192px !important;
-    height: 340px;
+    height: 342px !important;
   }
   .interfaces-content .slider-screens .slick-slide.slick-center img {
     margin: 0;

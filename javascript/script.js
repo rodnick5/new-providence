@@ -66,24 +66,6 @@ for ( let anchor of anchors){
         })
     })
 }
-var expire = new Date();
-expire.setHours(expire.getHours() + 4);
- 
-document.cookie = "city=Berlin;expires="+expire.toUTCString()+";";
-document.cookie = "country=Germany;expires="+expire.toUTCString()+";";
-document.cookie = "login=tom32;";
- 
-document.write(document.cookie);
-var cookies = document.cookie.split(";");
-for(var i=0; i<cookies.length; i++){
- 
-    var parts = cookies[i].split("="),
-        name = parts[0], 
-        value = parts[1];
-    document.write("Имя куки: " + name + "<br/>");
-    document.write("Значение: " + value + "<br/><br/>");
-}
-
 // const animItems = document.querySelectorAll('.box');
 // if(animItems.length > 0){
 // window.addEventListener('scroll' , animOnScroll);
@@ -114,6 +96,7 @@ for(var i=0; i<cookies.length; i++){
     
 // }
 $(document).ready(function(){
+  let $comments = $('.comments-content');
     $('.slider-screens').slick({
         focusOnSelect: true,
         centerMode:true,
@@ -169,7 +152,7 @@ $(document).ready(function(){
               breakpoint: 769,
               settings: {
                 arrows: false,
-                centerPadding: '20px',
+                centerPadding: '10px',
                 focusOnSelect: true,
               }
             },
@@ -196,5 +179,43 @@ $(document).ready(function(){
         infinite:false,
         asNavFor:'.slider-img',
     });
+    $('.slider-img').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+      if(nextSlide === 0){
+        $comments.css({
+          'background-color': 'rgb(216, 216, 216)',
+          'transition': 'all 1s'
+        });
+        console.log('0');
+      }
+      if(nextSlide === 1){
+        $comments.css({
+          'background-color': 'rgba(195, 221, 236, 0.788)',
+          'transition': 'all 1s'
+        });
+        console.log('1');
+      }
+      if(nextSlide === 2){
+        $comments.css({
+          'background-color': 'rgb(255,255,255)',
+          'transition': 'all 1s'
+        })
+        console.log('2');
+      }
+      if(nextSlide === 3){
+        $comments.css({
+          'background-color': 'rgb(216, 216, 216)',
+          'transition': 'all 1s'
+        });
+        console.log('3');
+      }
+      if(nextSlide === 4){
+        $comments.css({
+          'background-color': 'rgba(195, 221, 236, 0.788)',
+          'transition': 'all 1s'
+        });
+        console.log('4');
+      }
+    });
 
 });
+

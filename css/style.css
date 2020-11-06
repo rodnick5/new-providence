@@ -18,6 +18,10 @@ p {
   margin-bottom: 0px;
 }
 
+.active {
+  color: aqua !important;
+}
+
 .back_to_top {
   position: fixed;
   bottom: 40px;
@@ -137,8 +141,10 @@ header .container nav .header-left-side .menu-burger {
   display: block;
 }
 
-header .container nav .header-left-side .menu-burger span, header .container nav .header-left-side .menu-burger span:before, header .container nav .header-left-side .menu-burger span:after {
-  content: '';
+header .container nav .header-left-side .menu-burger span,
+header .container nav .header-left-side .menu-burger span:before,
+header .container nav .header-left-side .menu-burger span:after {
+  content: "";
   margin-top: 8px;
   position: absolute;
   background-color: #1b1c1e;
@@ -148,19 +154,19 @@ header .container nav .header-left-side .menu-burger span, header .container nav
 }
 
 header .container nav .header-left-side .menu-burger span:before {
-  content: '';
+  content: "";
   margin-top: 5px;
 }
 
 header .container nav .header-left-side .menu-burger span:after {
-  content: '';
+  content: "";
   margin-top: -5px;
 }
 
 header .container nav .header-left-side a {
   color: #26272d;
   line-height: 1;
-  font-family: 'Lato';
+  font-family: "Lato";
   margin-right: 42px;
 }
 
@@ -815,11 +821,11 @@ header .container .phone-img {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  transition: all .5s;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  -ms-transition: all .5s;
-  -o-transition: all .5s;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 
 .comments-content .container .slider-img .slick-list {
@@ -1572,25 +1578,29 @@ footer .container .more-content h5 span {
 }
 
 @media only screen and (min-width: 1921px) {
-  .container, nav {
+  .container,
+  nav {
     width: 1450px;
   }
 }
 
 @media only screen and (min-width: 1601px) and (max-width: 1920px) {
-  .container, nav {
+  .container,
+  nav {
     width: 1320px;
   }
 }
 
 @media only screen and (min-width: 1490px) and (max-width: 1600px) {
-  .container, nav {
+  .container,
+  nav {
     width: 1170px;
   }
 }
 
 @media only screen and (min-width: 1366px) and (max-width: 1489px) {
-  .container, nav {
+  .container,
+  nav {
     width: 1100px;
   }
   .protection-content .container .protection-phone-hack .phone-left-side {
@@ -1618,7 +1628,8 @@ footer .container .more-content h5 span {
 }
 
 @media only screen and (min-width: 1152px) and (max-width: 1365px) {
-  .container, nav {
+  .container,
+  nav {
     width: 1050px;
   }
   .protection-content .container .protection-sides .protection-left-side p {
@@ -1669,7 +1680,8 @@ footer .container .more-content h5 span {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1151px) {
-  .container, nav {
+  .container,
+  nav {
     width: 960px;
   }
   .protection-content .container .protection-sides {
@@ -1725,7 +1737,8 @@ footer .container .more-content h5 span {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .container, nav {
+  .container,
+  nav {
     width: 720px;
   }
   .protection-content .container .protection-sides {

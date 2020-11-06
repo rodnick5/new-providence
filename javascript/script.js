@@ -15,8 +15,8 @@ indiv.onclick = function(){
     comp.classList.remove('active-text');
 }
     function trackScroll() {
-      var scrolled = window.pageYOffset;
-      var coords = document.documentElement.clientHeight;
+      let scrolled = window.pageYOffset;
+      let coords = document.documentElement.clientHeight;
       let width = document.documentElement.clientWidth;
       if(width > 1023){
         if (scrolled > coords) {
@@ -25,6 +25,8 @@ indiv.onclick = function(){
         if (scrolled < coords) {
         goTopBtn.classList.remove('back_to_top-show');
       }
+      } else {
+        goTopBtn.classList.remove('back_to_top-show');
       }
     }
   
@@ -35,6 +37,7 @@ indiv.onclick = function(){
       }
     }
     function navScroll() {
+        let nav = document.getElementById('navigation');
         let width = document.documentElement.clientWidth;
         if (width > 991){
            let scrolled = window.pageYOffset;
@@ -49,8 +52,7 @@ indiv.onclick = function(){
         }
     }
 
-    var goTopBtn = document.querySelector('.back_to_top');
-    let nav = document.getElementById('navigation');
+    let goTopBtn = document.querySelector('.back_to_top');
     window.addEventListener('scroll', trackScroll);
     goTopBtn.addEventListener('click', backToTop);
     window.addEventListener('scroll', navScroll);
@@ -59,6 +61,7 @@ indiv.onclick = function(){
 for ( let anchor of anchors){
     anchor.addEventListener('click' , function(event){
         event.preventDefault();
+        
         const blockID = anchor.getAttribute('href');
         document.querySelector('' + blockID).scrollIntoView({
             behavior: 'smooth',
@@ -95,6 +98,41 @@ for ( let anchor of anchors){
 //     }
     
 // }
+// window.addEventListener('scroll', function(){
+//   let sections = document.querySelectorAll('section');
+//   sections.forEach(function(i,el){
+//     let top
+//   })
+// })
+// jQuery(window).scroll(function(){
+//   let $sections = $('section');
+// $sections.each(function(i,el){
+//  let top  = $(el).offset().top-100;
+//  let bottom = top +$(el).height();
+//  let scroll = $(window).scrollTop();
+//  let id = $(el).attr('id');
+// if( scroll > top && scroll < bottom){
+//      $('a.active').removeClass('active');
+// $('a[href="#'+id+'"]').addClass('active');
+
+//  }
+// })
+// });
+
+// $(".header-left-side").on("click","a", function (event) {
+//  // исключаем стандартную реакцию браузера
+//  event.preventDefault();
+
+//  // получем идентификатор блока из атрибута href
+//  let id  = $(this).attr('href'),
+
+//  // находим высоту, на которой расположен блок
+//      top = $(id).offset().top;
+  
+//  // анимируем переход к блоку, время: 800 мс
+//  $('body,html').animate({scrollTop: top}, 800);
+// });
+
 $(document).ready(function(){
   let $comments = $('.comments-content');
     $('.slider-screens').slick({

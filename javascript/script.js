@@ -2,23 +2,40 @@ let indiv = document.getElementById('individual');
 let comp = document.getElementById('company');
 let indivBlock = document.getElementById('individual_block');
 let compBlock = document.getElementById('company_block')
+let plan1 = document.getElementById('plan1');
+let plan2 = document.getElementById('plan2');
 comp.onclick = function(){
     compBlock.classList.add('active-btn');
     comp.classList.add('active-text');
     indivBlock.classList.remove('active-btn');
     indiv.classList.remove('active-text');
+    plan1.style.opacity = 0;
+    plan2.style.opacity = 1;
+    setTimeout(() => {
+      plan2.classList.add('active-plan');
+    plan1.classList.remove('active-plan');
+    }, 200);
+    
+    
 }
 indiv.onclick = function(){
     indivBlock.classList.add('active-btn');
     indiv.classList.add('active-text');
     compBlock.classList.remove('active-btn');
     comp.classList.remove('active-text');
+    plan2.style.opacity = 0;
+    plan1.style.opacity = 1;
+    setTimeout(() => {
+      plan1.classList.add('active-plan');
+      plan2.classList.remove('active-plan');
+    }, 200);
+    
 }
     function trackScroll() {
       let scrolled = window.pageYOffset;
       let coords = document.documentElement.clientHeight;
       let width = document.documentElement.clientWidth;
-      if(width > 1023){
+      if(width > 767){
         if (scrolled > coords) {
         goTopBtn.classList.add('back_to_top-show');
         }
@@ -49,6 +66,8 @@ indiv.onclick = function(){
             nav.classList.remove('scrolled-menu-nav');
             nav.style.justifyContent = 'space-between';
         } 
+        }else {
+          nav.classList.remove('scrolled-menu-nav');
         }
     }
 
@@ -57,16 +76,26 @@ indiv.onclick = function(){
     goTopBtn.addEventListener('click', backToTop);
     window.addEventListener('scroll', navScroll);
     
+    
+    let menuBtn = document.getElementById('menu-burger-button');
+    menuBtn.addEventListener('click', function(){
+      let menu = document.getElementById('menu-burger');
+      menu.classList.toggle('nonactive');
+      menuBtn.classList.toggle('active-menu-btn');
+    })
+
+
     const anchors = document.querySelectorAll('a[href*="#"]');
 for ( let anchor of anchors){
     anchor.addEventListener('click' , function(event){
         event.preventDefault();
-        
+      
         const blockID = anchor.getAttribute('href');
         document.querySelector('' + blockID).scrollIntoView({
             behavior: 'smooth',
             block: 'start'
         })
+        
     })
 }
 // const animItems = document.querySelectorAll('.box');
@@ -190,6 +219,7 @@ $(document).ready(function(){
               breakpoint: 769,
               settings: {
                 arrows: false,
+                touchThreshold: 4,
                 centerPadding: '10px',
                 focusOnSelect: true,
               }
@@ -198,6 +228,7 @@ $(document).ready(function(){
               breakpoint: 578,
               settings: {
                 arrows: false,
+                touchThreshold: 4,
                 centerPadding: '40px',
                 slidesToShow: 1
               }

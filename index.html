@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>New Providence</title>
 </head>
 <body>
-    <a class="back_to_top">↑</a>
+    <a class="back_to_top"><span>↑</span></a>
+    <div  class="menu-burger-block nonactive" id="menu-burger">
+        <a href="#tour">Tour</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#help" class="header-help">Help</a>
+        <a href="#contacts">Contacts</a>
+        <div class="menu-button"><a href="" class="link-button"><img src="img/AppleIcon.png" alt="apple"> Get App</a></div>
+    </div>
     <header>
         <div class="container">
         <nav id='navigation'>
             <div class="header-left-side">
-                <div class="menu-burger"><span></span></div>
+                <div class="menu-burger" id="menu-burger-button"><span></span></div>
                     <a href="#tour">Tour</a>
                         <a href="#features">Features</a>
                 <a href="#pricing">Pricing</a>
@@ -53,9 +60,9 @@
         </div>
     </div>
     <div class="horizontal-line"><span></span></div>
-    <div class="protection-phone-hack" id="features">
+    <div class="protection-phone-hack" >
         <div class="phone-left-side"><img src="img/iPhone6rotate.png" alt="iPhone6rotate" class="box"></div>
-            <div class="phone-right-side">
+            <div class="phone-right-side" id="features">
                 <h3>Your day <br>is protected</h3>
                     <p>There have not been any since we have lived here, said my mother.<br><br>We thought - Mr. Copperfield thought - it was quite a large rookery; but the nests were very old ones, and the birds have deserted them a long while.</p>
                 <div class="hack-buttons">
@@ -200,7 +207,7 @@
             <p class="info-block">Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</p>
             <h6>Have a bigger team? <a href="">Let‘s talk</a> </h6>
         </div>
-        <div class="different-plans">
+        <div class="different-plans active-plan" id="plan1">
             <div class="starter-plan">
                 <h2>Starter</h2>
                 <div class="price-block">
@@ -221,6 +228,33 @@
                 <div class="plan-list"><img src="img/OnIcon.png" alt="OnIcon"><h5>Connect Dropbox & Evernote</h5></div>
                 <div class="plan-list"><img src="img/OnIcon.png" alt="OnIcon"><h5>Personal Assistant</h5></div>
                 <div class="plan-button"><a href="">Make me a Pro</a></div>
+            </div>
+        </div>
+        <div class="different-plans " id="plan2">
+            <div class="starter-plan">
+                <h2>Company start</h2>
+                <div class="price-block">
+                    <h5>$15.99</h5>
+                </div>
+                <p>Lorem, ipsum dolor <br>lorem</p>
+                <div class="plan-list"><img src="img/OnIcon.png" alt="OnIcon"><h5>Lorem, ipsum</h5></div>
+                <div class="plan-list"><img src="img/OnIcon.png" alt="OnIcon"><h5>Sample text </h5></div>
+                <div class="plan-list"><img src="img/OnIcon.png" alt="OnIcon"><h5>Help with your project</h5></div>
+                
+                <div class="plan-button"><a href="">Make a company</a></div>
+            </div>
+            <div class="pro-plan">
+                <h2>Company Pro</h2>
+                <div class="price-block">
+                    <h5>$29.99</h5>
+                </div>
+                <p>Make your company <br>bigger</p>
+                <div class="plan-list"><img src="img/OnIcon.png" alt="OnIcon"><h5>Sample text</h5></div>
+                <div class="plan-list"><img src="img/OnIcon.png" alt="OnIcon"><h5>Making you super</h5></div>
+                <div class="plan-list"><img src="img/OnIcon.png" alt="OnIcon"><h5>Personal memory</h5></div>
+                <div class="plan-list"><img src="img/OnIcon.png" alt="OnIcon"><h5>Data Base strorage</h5></div>
+
+                <div class="plan-button"><a href="">Buy package</a></div>
             </div>
         </div>
     </div>

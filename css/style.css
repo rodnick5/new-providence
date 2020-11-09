@@ -12,10 +12,15 @@ html::-webkit-scrollbar {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
   text-decoration: none;
+}
+
+.hidden {
+  overflow-y: hidden;
 }
 
 .container {
@@ -159,8 +164,7 @@ h3 {
 }
 
 .menu-burger-block a:nth-child(1) {
-  --marginT: calc(50vh - 40%);
-  margin-top: var(--marginT);
+  margin-top: 300px;
 }
 
 .menu-burger-block .menu-button {
@@ -168,8 +172,10 @@ h3 {
   width: 132px;
   height: 42px;
   display: block;
-  --marginB: calc(30vh - 100px);
-  margin: var(--marginB) auto 0;
+  position: absolute;
+  left: 50%;
+  margin-left: -66px;
+  bottom: 40px;
   border-radius: 40px;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
@@ -177,7 +183,7 @@ h3 {
   -o-border-radius: 40px;
 }
 
-.menu-burger-block .menu-button a {
+.menu-burger-block .menu-button .link-button {
   padding-left: 17px;
   margin: 0;
   display: -webkit-box;
@@ -193,7 +199,7 @@ h3 {
   color: white;
 }
 
-.menu-burger-block .menu-button a img {
+.menu-burger-block .menu-button .link-button img {
   padding-right: 14px;
   padding-bottom: 3px;
 }
@@ -1384,6 +1390,8 @@ header .container .phone-img {
 
 .plans-content .container .plans-sides .different-plans .starter-plan .plan-list h5 {
   margin-bottom: 0;
+  font-family: "Lato";
+  font-size: 16px;
 }
 
 .plans-content .container .plans-sides .different-plans .starter-plan .plan-button {
@@ -2298,6 +2306,12 @@ footer .container .more-content h5 span {
 @media only screen and (min-width: 319px) and (max-width: 575px) {
   .container {
     width: 306px;
+  }
+  .menu-burger-block a:nth-child(1) {
+    margin-top: 150px;
+  }
+  .menu-burger-block .menu-button a {
+    margin: 0;
   }
   .protection-content {
     margin-bottom: 0px;

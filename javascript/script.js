@@ -79,9 +79,20 @@ indiv.onclick = function(){
     
     let menuBtn = document.getElementById('menu-burger-button');
     menuBtn.addEventListener('click', function(){
+      let html = document.querySelector('html');
       let menu = document.getElementById('menu-burger');
+
       menu.classList.toggle('nonactive');
       menuBtn.classList.toggle('active-menu-btn');
+      html.classList.toggle('hidden');
+      for(let anchor of anchors){
+        anchor.addEventListener('click' , function(){
+          menu.classList.add('nonactive');
+          menuBtn.classList.remove('active-menu-btn');
+          html.classList.remove('hidden');
+          
+        })
+      }
     })
 
 

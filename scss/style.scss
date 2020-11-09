@@ -1200,6 +1200,8 @@ header {
                             margin-right: 8px;
                         }
                         h5 {
+                            font-family: "Lato";
+                            font-size: 16px;
                             margin-bottom: 0;
                         }
                     }
@@ -1783,6 +1785,8 @@ footer {
             }
             .worldmap-content {
                 justify-content: center;
+                padding-top:0 ;
+                margin-top: 150px;
 
                 .worldmap-right-side {
                     height: 290px;
@@ -2094,7 +2098,8 @@ footer {
             }
             .worldmap-content {
                 justify-content: center;
-                padding-top: 60px;
+                padding-top: 0px;
+                margin-top: 60px;
 
                 .worldmap-right-side {
                     height: 150px;

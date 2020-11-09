@@ -1516,6 +1516,8 @@ header .container .phone-img {
 }
 
 .plans-content .container .plans-sides .different-plans .pro-plan .plan-list h5 {
+  font-family: "Lato";
+  font-size: 16px;
   margin-bottom: 0;
 }
 
@@ -2118,6 +2120,8 @@ footer .container .more-content h5 span {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-top: 0;
+    margin-top: 150px;
   }
   .protection-content .container .worldmap-content .worldmap-right-side {
     height: 290px;
@@ -2407,7 +2411,8 @@ footer .container .more-content h5 span {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-top: 60px;
+    padding-top: 0px;
+    margin-top: 60px;
   }
   .protection-content .container .worldmap-content .worldmap-right-side {
     height: 150px;
